@@ -2,7 +2,8 @@
   "name": "mfe-dashboard",
   "version": "0.1.0",
   "private": true,
-  "scripts": { 
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "next dev --turbo",
     "build": "next build --turbopack",
     "start": "next start",

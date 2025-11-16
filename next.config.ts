@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
       bodySizeLimit: '10mb'
     },
     useLightningcss: true,
+    // useLightningcss: false,
     optimizePackageImports: []
   },
   typedRoutes: true,
@@ -37,8 +38,7 @@ const nextConfig: NextConfig = {
   },
    eslint: {
     ignoreDuringBuilds: true,
-  },
-
+  }, 
 };
 
 export default nextConfig
