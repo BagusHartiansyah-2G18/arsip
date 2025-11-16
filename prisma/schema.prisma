@@ -1,0 +1,83 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js" 
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id     String  @id @default(uuid())  // ubah dari Int -> String
+  name   String
+  email  String  @unique
+  pass   String
+  nip    String @default("")
+  level  Int @default(1)
+
+  arsip  Arsip[]
+  bidangSebagaiUser     Bidang[] @relation("UserBidang")
+  bidangSebagaiPimpinan Bidang[] @relation("PimpinanBidang")
+}
+
+model Dinas {
+  id String  @id @default(uuid())
+  nm String
+   
+  bidang    Bidang[]
+}
+
+model Bidang {
+  id          String  @id @default(uuid())
+  nm          String
+
+  idUser      String
+  user        User    @relation("UserBidang", fields: [idUser], references: [id])
+
+  idPimpinan  String @default("")
+  pimpinan    User    @relation("PimpinanBidang", fields: [idPimpinan], references: [id])
+
+  jabatan String @default("")
+  jab String @default("")
+  img String  @default("")
+
+  idDin  String
+  dinas  Dinas   @relation(fields: [idDin], references: [id])
+
+  arsip Arsip[] @relation("BidangArsip") 
+}
+
+model Arsip {
+  id           String   @id @default(uuid())
+  idUser       String
+  user         User     @relation(fields: [idUser], references: [id])
+  idBidang    String
+  bidang      Bidang     @relation("BidangArsip",fields: [idBidang], references: [id])
+  kategori    String
+  jenis       String  
+  rentang     String
+  retensi     String
+  keterangan  String
+
+  kd           String
+  uraian       String
+  uraianPoint  String 
+  uraianPointC String
+  tgl          String
+  docStatus    String
+  docC         String
+  file         String  @db.LongText
+  status       String 
+  formAs       String   @default("")
+  formNm       String  @db.LongText @default("")
+  formVal      String  @db.LongText @default("")
+  created_by   String
+  created_at   DateTime @default(now())
+  deletedAt    DateTime?
+}

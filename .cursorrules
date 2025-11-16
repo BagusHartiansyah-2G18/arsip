@@ -1,0 +1,523 @@
+# Cursor Rules for Peaceful Dashboard - Tourism Management System
+
+## Project Overview
+This is a comprehensive tourism management dashboard built with Next.js 15, featuring a modern admin interface for managing destinations, events, services, and user interactions. The application follows a feature-based architecture with clear separation between business logic and UI components.
+
+## Business Domain & Theme
+**Tourism Management Platform** - A comprehensive dashboard for managing:
+- **Destinations** - Tourist attractions and locations
+- **Events** - Tourism events and activities with calendar integration
+- **Services** - Tourism-related services and offerings
+- **Announcements** - Public announcements and updates
+- **Categories** - Destination categorization system
+- **Flows** - Tourism flow management
+- **Users** - User management and authentication
+- **Dashboard** - Analytics and visitor insights
+
+## Tech Stack
+- **Framework**: Next.js 15.5.4 with App Router
+- **Styling**: Tailwind CSS v4 with PostCSS
+- **Language**: TypeScript 5
+- **Package Manager**: NPM
+- **Linting**: ESLint with Next.js config
+- **Build Tool**: Turbopack
+- **UI Library**: shadcn/ui (New York style)
+- **Icons**: Lucide React
+- **Forms**: React Hook Form + Zod validation
+- **Tables**: TanStack Table
+- **Maps**: Mapbox GL
+- **Animations**: Framer Motion
+- **Fonts**: Geist Sans and Geist Mono
+
+## Architecture Principles
+
+### Feature-Based Architecture
+The project follows a **feature-first** approach where business logic is organized by domain:
+
+```
+src/
+├── features/                 # 🎯 BUSINESS DOMAINS
+│   ├── dashboard/           # Dashboard analytics & insights
+│   ├── events/              # Event management with calendar
+│   ├── destinations/        # Destination management
+│   ├── announcements/       # Announcement system
+│   ├── services/            # Service management
+│   ├── categories/          # Category management
+│   ├── flows/               # Flow management
+│   ├── users/               # User management
+│   ├── settings/            # Settings & configuration
+│   └── auth/                # Authentication system
+├── components/               # 🧩 REUSABLE UI COMPONENTS
+│   ├── common/              # Shared form components
+│   ├── data-table/          # Table components
+│   ├── layout/              # Layout components
+│   ├── skeletons/           # Loading states
+│   └── ui/                  # Base UI primitives
+├── hooks/                    # Custom React hooks
+├── lib/                      # Utilities & API clients
+└── types/                    # TypeScript definitions
+```
+
+### Import Patterns
+```typescript
+// ✅ Feature imports
+import { EventForm } from "@/features/events";
+import { DestinationForm } from "@/features/destinations";
+
+// ✅ Shared component imports
+import { FormHeader, FormActions } from "@/components/common";
+import { Button } from "@/components/ui/button";
+import { DashboardLayout } from "@/components/layout";
+
+// ✅ Hook imports
+import { useAuth } from "@/hooks/auth";
+import { useApi } from "@/hooks/api";
+
+// ❌ Avoid direct component imports
+import { EventForm } from "@/features/events/components/EventForm";
+```
+
+## UI/UX Design System
+
+### Design Philosophy
+- **Modern & Clean**: Minimalist design with ample whitespace
+- **Tourism-Focused**: Color schemes and icons that reflect travel/tourism
+- **Responsive**: Mobile-first approach with adaptive layouts
+- **Accessible**: WCAG compliant with proper contrast ratios
+- **Consistent**: Unified spacing, typography, and component patterns
+
+### Color Palette
+```css
+/* Primary Colors */
+--primary: oklch(0.205 0 0);           /* Dark gray for text */
+--primary-foreground: oklch(0.985 0 0); /* White text */
+
+/* Tourism Accent Colors */
+--emerald-50: #ecfdf5;    /* Light green for nature/destinations */
+--blue-50: #eff6ff;       /* Light blue for services */
+--purple-50: #faf5ff;     /* Light purple for events */
+--orange-50: #fff7ed;     /* Light orange for announcements */
+
+/* Status Colors */
+--success: oklch(0.646 0.222 41.116);  /* Green for success */
+--warning: oklch(0.828 0.189 84.429);  /* Yellow for warnings */
+--error: oklch(0.577 0.245 27.325);    /* Red for errors */
+```
+
+### Component Patterns
+
+#### Dashboard Cards
+```tsx
+// Stats cards with tourism icons
+<div className="bg-white rounded-xl p-6 border border-gray-200">
+  <div className="flex items-center justify-between">
+    <div>
+      <p className="text-sm text-gray-600 mb-1">Total Destinations</p>
+      <p className="text-3xl font-bold text-gray-900">24</p>
+    </div>
+    <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center">
+      <span className="text-2xl">🗺️</span>
+    </div>
+  </div>
+</div>
+```
+
+#### Form Layouts
+```tsx
+// Standardized form structure
+<div className="space-y-6">
+  <FormHeader 
+    title="Add New Destination"
+    description="Create a new tourist destination"
+    showBackButton={true}
+  />
+  
+  <Card className="p-6">
+    <form className="space-y-4">
+      {/* Form fields */}
+    </form>
+  </Card>
+  
+  <FormActions 
+    onCancel={() => router.back()}
+    onSubmit={handleSubmit}
+    isLoading={isSubmitting}
+  />
+</div>
+```
+
+#### Data Tables
+```tsx
+// Consistent table structure with actions
+<DataTable
+  columns={columns}
+  data={data}
+  searchKey="name"
+  onAdd={() => router.push('/destinations/add')}
+  onEdit={(id) => router.push(`/destinations/edit/${id}`)}
+  onDelete={handleDelete}
+/>
+```
+
+### Loading States
+```tsx
+// Skeleton loading patterns
+<DashboardSkeleton />           // Dashboard loading
+<DataTablePageSkeleton />       // Table page loading
+<FormPageSkeleton />            // Form page loading
+<EditPageSkeleton />            // Edit page loading
+```
+
+## Authentication System
+
+### Auth Flow
+```typescript
+// Authentication hooks
+const { user, token, isAuthenticated, login, logout } = useAuth();
+const { saveAuthData, clearAuthData } = useAuthStorage();
+
+// Protected routes
+<ProtectedRoute fallback={<LoginPage />}>
+  <DashboardContent />
+</ProtectedRoute>
+```
+
+### Token Management
+- **JWT Tokens**: Secure authentication with refresh tokens
+- **LocalStorage**: Persistent auth state
+- **Auto-refresh**: Token validation and refresh
+- **Route Protection**: Automatic redirects for unauthenticated users
+
+## Form Management
+
+### Form Patterns
+```typescript
+// React Hook Form + Zod validation
+const form = useForm<FormData>({
+  resolver: zodResolver(formSchema),
+  defaultValues: {
+    // Default values
+  }
+});
+
+const onSubmit = async (data: FormData) => {
+  try {
+    await createItem(data);
+    toast.success("Item created successfully");
+    router.push("/items");
+  } catch (error) {
+    toast.error("Failed to create item");
+  }
+};
+```
+
+### Form Components
+- **FormHeader**: Standardized form headers with back navigation
+- **FormActions**: Consistent submit/cancel buttons
+- **Field Components**: Reusable form field components
+- **Validation**: Zod schema validation with error handling
+
+## Data Management
+
+### API Patterns
+```typescript
+// API client functions
+export const destinationsApi = {
+  getAll: () => fetchData<Destination[]>(API_ROUTES.DESTINATIONS),
+  getById: (id: string) => fetchData<Destination>(`${API_ROUTES.DESTINATIONS}/${id}`),
+  create: (data: CreateDestinationData) => createItem(API_ROUTES.DESTINATIONS, data),
+  update: (id: string, data: UpdateDestinationData) => updateItem(`${API_ROUTES.DESTINATIONS}/${id}`, data),
+  delete: (id: string) => deleteItem(`${API_ROUTES.DESTINATIONS}/${id}`)
+};
+```
+
+### Data Fetching Hooks
+```typescript
+// Custom hooks for data management
+const { data, isLoading, error, refetch } = useApi<Destination[]>(
+  () => destinationsApi.getAll(),
+  { dependencies: [] }
+);
+```
+
+## File Structure Guidelines
+
+### Feature Module Structure
+```
+features/{feature-name}/
+├── components/           # Feature-specific components
+│   ├── {Feature}Form.tsx
+│   ├── {Feature}List.tsx
+│   └── {Feature}Card.tsx
+├── hooks/               # Feature-specific hooks (optional)
+│   └── use{Feature}.ts
+└── index.ts            # Public exports
+```
+
+### Component Organization
+```
+components/
+├── common/              # Shared across features
+│   ├── FormHeader.tsx
+│   └── FormActions.tsx
+├── data-table/          # Table components
+│   ├── DataTable.tsx
+│   ├── DataTableBody.tsx
+│   └── DataTableHeader.tsx
+├── layout/              # Layout components
+│   ├── DashboardLayout.tsx
+│   └── sidebar/
+├── skeletons/           # Loading states
+│   ├── DashboardSkeleton.tsx
+│   └── FormPageSkeleton.tsx
+└── ui/                  # Base UI components
+    ├── button.tsx
+    ├── input.tsx
+    └── card.tsx
+```
+
+## Code Style Guidelines
+
+### TypeScript
+- Use strict TypeScript configuration
+- Prefer interfaces over types for object shapes
+- Use proper typing for all props and state
+- Avoid `any` type - use `unknown` or proper typing
+- Use generic types when appropriate
+
+### React Components
+- Use functional components with hooks
+- Prefer `const` over `let` and `var`
+- Use proper prop destructuring
+- Implement proper error boundaries
+- Use React.memo() for performance optimization when needed
+
+### Next.js Specific
+- Use `next/image` for images with proper optimization
+- Use `next/link` for internal navigation
+- Implement proper metadata for SEO
+- Use Server Components by default, Client Components when needed
+- Add `"use client"` directive only when necessary
+
+## Tailwind CSS Guidelines
+
+### Class Organization
+```tsx
+// Logical grouping: layout, spacing, colors, typography, effects
+className="flex items-center justify-center gap-4 p-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+```
+
+### Responsive Design
+```tsx
+// Mobile-first responsive design
+className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+className="text-sm md:text-base lg:text-lg"
+className="p-4 md:p-6 lg:p-8"
+```
+
+### Dark Mode Support
+```tsx
+// Always include dark mode variants
+className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+className="border-gray-200 dark:border-gray-700"
+```
+
+## Performance Guidelines
+
+### Image Optimization
+- Always use `next/image` component
+- Provide proper `alt` attributes
+- Use `priority` for above-the-fold images
+- Specify width and height for layout stability
+
+### Code Splitting
+- Use dynamic imports for heavy components
+- Implement proper loading states
+- Use Suspense boundaries appropriately
+
+### Bundle Optimization
+- Avoid importing entire libraries when only specific functions are needed
+- Use tree-shaking friendly imports
+- Implement proper error boundaries
+
+## Accessibility Guidelines
+
+### Semantic HTML
+- Use proper HTML elements (header, main, nav, section, article)
+- Implement proper heading hierarchy (h1, h2, h3, etc.)
+- Use descriptive alt text for images
+- Ensure proper focus management
+
+### ARIA Attributes
+- Use ARIA labels when necessary
+- Implement proper roles and states
+- Ensure keyboard navigation works
+- Test with screen readers
+
+## Development Workflow
+
+### Commands
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production with Turbopack
+- `npm run lint` - Run ESLint
+- `npm start` - Start production server
+
+### Git Workflow
+- Use conventional commit messages
+- Create feature branches for new functionality
+- Keep commits atomic and focused
+- Write descriptive commit messages
+
+## Error Handling
+
+### Error Boundaries
+- Implement error boundaries for graceful error handling
+- Use `error.tsx` files in App Router
+- Provide meaningful error messages
+- Log errors appropriately
+
+### API Error Handling
+```typescript
+// Consistent error handling pattern
+try {
+  const result = await apiCall();
+  toast.success("Operation successful");
+  return result;
+} catch (error) {
+  const errorMessage = error instanceof Error ? error.message : "Operation failed";
+  toast.error(errorMessage);
+  throw error;
+}
+```
+
+## Testing Guidelines
+
+### Component Testing
+- Write tests for complex components
+- Test user interactions and edge cases
+- Mock external dependencies
+- Use proper test utilities
+
+### Integration Testing
+- Test complete user flows
+- Verify API integrations
+- Test responsive design
+- Validate accessibility
+
+## Security Guidelines
+
+### Next.js Security
+- Use proper CSP headers
+- Implement proper authentication
+- Validate user inputs
+- Use environment variables for sensitive data
+
+### Dependencies
+- Keep dependencies updated
+- Audit packages for vulnerabilities
+- Use trusted sources for packages
+- Implement proper dependency management
+
+## Deployment Guidelines
+
+### Build Optimization
+- Ensure production builds are optimized
+- Use proper environment variables
+- Implement proper caching strategies
+- Monitor bundle sizes
+
+### Performance Monitoring
+- Implement performance monitoring
+- Use proper analytics
+- Monitor Core Web Vitals
+- Optimize for mobile performance
+
+## Common Patterns to Follow
+
+### State Management
+- Use React hooks for local state
+- Consider Context API for global state
+- Implement proper state updates
+- Use proper dependency arrays
+
+### Data Fetching
+- Use Server Components for data fetching when possible
+- Implement proper loading states
+- Handle errors gracefully
+- Use proper caching strategies
+
+### Form Handling
+- Implement proper form validation
+- Use controlled components
+- Handle form submission properly
+- Provide user feedback
+
+## Code Review Checklist
+
+### Before Committing
+- [ ] TypeScript errors resolved
+- [ ] ESLint warnings addressed
+- [ ] Components properly typed
+- [ ] Accessibility requirements met
+- [ ] Performance considerations addressed
+- [ ] Responsive design implemented
+- [ ] Dark mode support added
+- [ ] Error handling implemented
+- [ ] Loading states added
+- [ ] Proper semantic HTML used
+
+### Code Quality
+- [ ] Code is readable and well-commented
+- [ ] Components are reusable
+- [ ] Proper separation of concerns
+- [ ] No console.log statements in production code
+- [ ] Proper error boundaries implemented
+- [ ] Performance optimizations applied
+
+## Resources and References
+
+### Documentation
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
+- [React Documentation](https://react.dev)
+- [shadcn/ui Documentation](https://ui.shadcn.com)
+
+### Tools
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [TypeScript Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero)
+- [ESLint](https://eslint.org)
+
+## Code Generation Guidelines
+
+### Silent Code Generation Rules
+- **NO EXPLANATIONS**: Provide only code without any explanatory text
+- **NO COMMENTS**: Don't add comments explaining what the code does
+- **DIRECT IMPLEMENTATION**: Jump straight to the code solution
+- **MINIMAL CONTEXT**: Only include essential imports and dependencies
+- **CLEAN OUTPUT**: Focus solely on the functional code
+- **NO VERBAL FEEDBACK**: Never explain what you're doing or why
+- **CODE ONLY**: Show only the actual code changes
+- **SILENT OPERATION**: Work without announcing actions or progress
+
+## Tourism-Specific Guidelines
+
+### Content Management
+- Use tourism-friendly language and terminology
+- Implement proper image galleries for destinations
+- Support multiple languages for international tourism
+- Include location-based features and maps
+
+### User Experience
+- Prioritize mobile experience for travelers
+- Implement quick booking and reservation flows
+- Provide clear navigation for different user types
+- Include social sharing features for destinations
+
+### Data Structure
+- Support rich media content (images, videos, 360° views)
+- Implement proper categorization and tagging
+- Include location data and mapping integration
+- Support seasonal and event-based content
+
+Remember to always prioritize user experience, performance, and maintainability in your code. Follow these guidelines to ensure consistency and quality across the tourism management platform.

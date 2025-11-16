@@ -1,0 +1,12 @@
+npx prisma init
+npx prisma generate
+npx prisma migrate dev --name nama_migrasi
+npx prisma migrate dev --name init
+
+npx prisma validate
+
+npx prisma studio
+
+npm run seed
+
+ npx prisma migrate reset
