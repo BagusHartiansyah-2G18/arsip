@@ -23,6 +23,6 @@ export default defineConfig({
   },
   engine: "classic",
   datasource: {
-    url: process.env.DATABASE_URL!,
+    url: "mysql://root:@localhost:3306/arsip"!,
   },
 });

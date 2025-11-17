@@ -7,36 +7,41 @@ const prisma = new PrismaClient();
 async function main() {
   const hashedPassword = await bcrypt.hash('admin123', 10);
 
-  // await prisma.user.createMany({
-  //   data: [
-  //     {
-  //     name: 'Sekretariat',
-  //     email: 'sekretariat@bpkad.com',
-  //     pass: hashedPassword,
-  //     level:1
-  //   },{
-  //     name: 'Anggaran',
-  //     email: 'anggaran@bpkad.com',
-  //     pass: hashedPassword,
-  //     level:1
-  //   },{
-  //     name: 'Perbendaharaan',
-  //     email: 'perbendaharaan@bpkad.com',
-  //     pass: hashedPassword,
-  //     level:1
-  //   },{
-  //     name: 'Akuntansi',
-  //     email: 'akuntansi@bpkad.com',
-  //     pass: hashedPassword,
-  //     level:1
-  //   },{
-  //     name: 'Aset',
-  //     email: 'aset@bpkad.com',
-  //     pass: hashedPassword,
-  //     level:1
-  //   },
-  //   ]
-  // });
+  await prisma.user.createMany({
+    data: [
+      {
+      name: 'Admin',
+      email: 'admin@bpkad.com',
+      pass: hashedPassword,
+      level:1
+    },{
+      name: 'Sekretariat',
+      email: 'sekretariat@bpkad.com',
+      pass: hashedPassword,
+      level:1
+    },{
+      name: 'Anggaran',
+      email: 'anggaran@bpkad.com',
+      pass: hashedPassword,
+      level:1
+    },{
+      name: 'Perbendaharaan',
+      email: 'perbendaharaan@bpkad.com',
+      pass: hashedPassword,
+      level:1
+    },{
+      name: 'Akuntansi',
+      email: 'akuntansi@bpkad.com',
+      pass: hashedPassword,
+      level:1
+    },{
+      name: 'Aset',
+      email: 'aset@bpkad.com',
+      pass: hashedPassword,
+      level:1
+    },
+    ]
+  });
 
   // await prisma.dinas.create({
   //   data:{
