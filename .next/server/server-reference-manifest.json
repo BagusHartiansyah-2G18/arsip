@@ -1,134 +1,909 @@
 {
   "node": {
-    "403d20ac4cc25c0071b5a005d260d62012b5e49ad1": {
+    "40f0a31aeb70ad32b968fd0fe896b3c6303116d220": {
       "workers": {
+        "app/(admin)/auth/page": {
+          "moduleId": "79537",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/dashboard/page": {
+          "moduleId": "2648",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/jenis/page": {
+          "moduleId": "98859",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/klasifikasi/page": {
+          "moduleId": "99607",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/page": {
+          "moduleId": "40750",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/add/page": {
+          "moduleId": "20130",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/autoForm/[id]/page": {
+          "moduleId": "60881",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/edit/[id]/page": {
+          "moduleId": "50171",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/page": {
+          "moduleId": "23200",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/sumber/page": {
+          "moduleId": "87197",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/_not-found/page": {
+          "moduleId": "47367",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/login/page": {
+          "moduleId": "95883",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
         "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%2C%5B%7B%22id%22%3A%22403d20ac4cc25c0071b5a005d260d62012b5e49ad1%22%2C%22exportedName%22%3A%22authRegister%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240953005d18a255b4ee6cec49dbf22338885dbfcc3%22%2C%22exportedName%22%3A%22authLogout%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240cd49c16c02ab4b5436bcad3394955c9854487e30%22%2C%22exportedName%22%3A%22authVerifyToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240de52f83b0d4ab4d647765e9925b23698a6ed6ef8%22%2C%22exportedName%22%3A%22authRefreshToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240eff184ac8bf3dd523c4860f453c12e9cfe4105fc%22%2C%22exportedName%22%3A%22authLogin%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%226030eb4381754d3ca6e31a7994b063a10ff54dc62a%22%2C%22exportedName%22%3A%22fetchData%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227067a2d943a0c00a890213bd30eaa31c81ed6e2548%22%2C%22exportedName%22%3A%22createItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2270725050a5ecb3f8af9babe1f0b6a86246c4adc4ce%22%2C%22exportedName%22%3A%22fetchDataWithCookies%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227084cdc9c2979842d60ef9d973c073117e7bea3cb5%22%2C%22exportedName%22%3A%22deleteItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2278eb38fd67444bdda62eab5942c356a0970c20083e%22%2C%22exportedName%22%3A%22updateItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
+          "moduleId": "78024",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/register/page": {
+          "moduleId": "48765",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
         }
       },
       "layer": {
-        "app/page": "action-browser"
+        "app/(admin)/auth/page": "action-browser",
+        "app/(admin)/dashboard/page": "action-browser",
+        "app/(admin)/form/page": "action-browser",
+        "app/(admin)/jenis/page": "action-browser",
+        "app/(admin)/klasifikasi/page": "action-browser",
+        "app/(admin)/page": "action-browser",
+        "app/(admin)/pendataan/add/page": "action-browser",
+        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
+        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
+        "app/(admin)/pendataan/page": "action-browser",
+        "app/(admin)/sumber/page": "action-browser",
+        "app/_not-found/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/page": "action-browser",
+        "app/register/page": "action-browser"
       },
-      "filename": "../C:\\laragon\\www\\arsip\\src\\lib\\actions\\api.ts",
-      "exportedName": "authRegister"
-    },
-    "40953005d18a255b4ee6cec49dbf22338885dbfcc3": {
-      "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%2C%5B%7B%22id%22%3A%22403d20ac4cc25c0071b5a005d260d62012b5e49ad1%22%2C%22exportedName%22%3A%22authRegister%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240953005d18a255b4ee6cec49dbf22338885dbfcc3%22%2C%22exportedName%22%3A%22authLogout%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240cd49c16c02ab4b5436bcad3394955c9854487e30%22%2C%22exportedName%22%3A%22authVerifyToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240de52f83b0d4ab4d647765e9925b23698a6ed6ef8%22%2C%22exportedName%22%3A%22authRefreshToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240eff184ac8bf3dd523c4860f453c12e9cfe4105fc%22%2C%22exportedName%22%3A%22authLogin%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%226030eb4381754d3ca6e31a7994b063a10ff54dc62a%22%2C%22exportedName%22%3A%22fetchData%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227067a2d943a0c00a890213bd30eaa31c81ed6e2548%22%2C%22exportedName%22%3A%22createItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2270725050a5ecb3f8af9babe1f0b6a86246c4adc4ce%22%2C%22exportedName%22%3A%22fetchDataWithCookies%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227084cdc9c2979842d60ef9d973c073117e7bea3cb5%22%2C%22exportedName%22%3A%22deleteItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2278eb38fd67444bdda62eab5942c356a0970c20083e%22%2C%22exportedName%22%3A%22updateItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/page": "action-browser"
-      },
-      "filename": "../C:\\laragon\\www\\arsip\\src\\lib\\actions\\api.ts",
-      "exportedName": "authLogout"
-    },
-    "40cd49c16c02ab4b5436bcad3394955c9854487e30": {
-      "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%2C%5B%7B%22id%22%3A%22403d20ac4cc25c0071b5a005d260d62012b5e49ad1%22%2C%22exportedName%22%3A%22authRegister%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240953005d18a255b4ee6cec49dbf22338885dbfcc3%22%2C%22exportedName%22%3A%22authLogout%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240cd49c16c02ab4b5436bcad3394955c9854487e30%22%2C%22exportedName%22%3A%22authVerifyToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240de52f83b0d4ab4d647765e9925b23698a6ed6ef8%22%2C%22exportedName%22%3A%22authRefreshToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240eff184ac8bf3dd523c4860f453c12e9cfe4105fc%22%2C%22exportedName%22%3A%22authLogin%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%226030eb4381754d3ca6e31a7994b063a10ff54dc62a%22%2C%22exportedName%22%3A%22fetchData%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227067a2d943a0c00a890213bd30eaa31c81ed6e2548%22%2C%22exportedName%22%3A%22createItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2270725050a5ecb3f8af9babe1f0b6a86246c4adc4ce%22%2C%22exportedName%22%3A%22fetchDataWithCookies%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227084cdc9c2979842d60ef9d973c073117e7bea3cb5%22%2C%22exportedName%22%3A%22deleteItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2278eb38fd67444bdda62eab5942c356a0970c20083e%22%2C%22exportedName%22%3A%22updateItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/page": "action-browser"
-      },
-      "filename": "../C:\\laragon\\www\\arsip\\src\\lib\\actions\\api.ts",
-      "exportedName": "authVerifyToken"
-    },
-    "40de52f83b0d4ab4d647765e9925b23698a6ed6ef8": {
-      "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%2C%5B%7B%22id%22%3A%22403d20ac4cc25c0071b5a005d260d62012b5e49ad1%22%2C%22exportedName%22%3A%22authRegister%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240953005d18a255b4ee6cec49dbf22338885dbfcc3%22%2C%22exportedName%22%3A%22authLogout%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240cd49c16c02ab4b5436bcad3394955c9854487e30%22%2C%22exportedName%22%3A%22authVerifyToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240de52f83b0d4ab4d647765e9925b23698a6ed6ef8%22%2C%22exportedName%22%3A%22authRefreshToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240eff184ac8bf3dd523c4860f453c12e9cfe4105fc%22%2C%22exportedName%22%3A%22authLogin%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%226030eb4381754d3ca6e31a7994b063a10ff54dc62a%22%2C%22exportedName%22%3A%22fetchData%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227067a2d943a0c00a890213bd30eaa31c81ed6e2548%22%2C%22exportedName%22%3A%22createItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2270725050a5ecb3f8af9babe1f0b6a86246c4adc4ce%22%2C%22exportedName%22%3A%22fetchDataWithCookies%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227084cdc9c2979842d60ef9d973c073117e7bea3cb5%22%2C%22exportedName%22%3A%22deleteItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2278eb38fd67444bdda62eab5942c356a0970c20083e%22%2C%22exportedName%22%3A%22updateItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/page": "action-browser"
-      },
-      "filename": "../C:\\laragon\\www\\arsip\\src\\lib\\actions\\api.ts",
-      "exportedName": "authRefreshToken"
-    },
-    "40eff184ac8bf3dd523c4860f453c12e9cfe4105fc": {
-      "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%2C%5B%7B%22id%22%3A%22403d20ac4cc25c0071b5a005d260d62012b5e49ad1%22%2C%22exportedName%22%3A%22authRegister%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240953005d18a255b4ee6cec49dbf22338885dbfcc3%22%2C%22exportedName%22%3A%22authLogout%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240cd49c16c02ab4b5436bcad3394955c9854487e30%22%2C%22exportedName%22%3A%22authVerifyToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240de52f83b0d4ab4d647765e9925b23698a6ed6ef8%22%2C%22exportedName%22%3A%22authRefreshToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240eff184ac8bf3dd523c4860f453c12e9cfe4105fc%22%2C%22exportedName%22%3A%22authLogin%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%226030eb4381754d3ca6e31a7994b063a10ff54dc62a%22%2C%22exportedName%22%3A%22fetchData%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227067a2d943a0c00a890213bd30eaa31c81ed6e2548%22%2C%22exportedName%22%3A%22createItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2270725050a5ecb3f8af9babe1f0b6a86246c4adc4ce%22%2C%22exportedName%22%3A%22fetchDataWithCookies%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227084cdc9c2979842d60ef9d973c073117e7bea3cb5%22%2C%22exportedName%22%3A%22deleteItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2278eb38fd67444bdda62eab5942c356a0970c20083e%22%2C%22exportedName%22%3A%22updateItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/page": "action-browser"
-      },
-      "filename": "../C:\\laragon\\www\\arsip\\src\\lib\\actions\\api.ts",
+      "filename": "src/lib/actions/api.ts",
       "exportedName": "authLogin"
     },
-    "6030eb4381754d3ca6e31a7994b063a10ff54dc62a": {
+    "40d55fb406fbdd4be25aa7fdad843d657e9e2bba5d": {
       "workers": {
+        "app/(admin)/auth/page": {
+          "moduleId": "79537",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/dashboard/page": {
+          "moduleId": "2648",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/jenis/page": {
+          "moduleId": "98859",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/klasifikasi/page": {
+          "moduleId": "99607",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/page": {
+          "moduleId": "40750",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/add/page": {
+          "moduleId": "20130",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/autoForm/[id]/page": {
+          "moduleId": "60881",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/edit/[id]/page": {
+          "moduleId": "50171",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/page": {
+          "moduleId": "23200",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/sumber/page": {
+          "moduleId": "87197",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/_not-found/page": {
+          "moduleId": "47367",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/login/page": {
+          "moduleId": "95883",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
         "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%2C%5B%7B%22id%22%3A%22403d20ac4cc25c0071b5a005d260d62012b5e49ad1%22%2C%22exportedName%22%3A%22authRegister%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240953005d18a255b4ee6cec49dbf22338885dbfcc3%22%2C%22exportedName%22%3A%22authLogout%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240cd49c16c02ab4b5436bcad3394955c9854487e30%22%2C%22exportedName%22%3A%22authVerifyToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240de52f83b0d4ab4d647765e9925b23698a6ed6ef8%22%2C%22exportedName%22%3A%22authRefreshToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240eff184ac8bf3dd523c4860f453c12e9cfe4105fc%22%2C%22exportedName%22%3A%22authLogin%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%226030eb4381754d3ca6e31a7994b063a10ff54dc62a%22%2C%22exportedName%22%3A%22fetchData%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227067a2d943a0c00a890213bd30eaa31c81ed6e2548%22%2C%22exportedName%22%3A%22createItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2270725050a5ecb3f8af9babe1f0b6a86246c4adc4ce%22%2C%22exportedName%22%3A%22fetchDataWithCookies%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227084cdc9c2979842d60ef9d973c073117e7bea3cb5%22%2C%22exportedName%22%3A%22deleteItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2278eb38fd67444bdda62eab5942c356a0970c20083e%22%2C%22exportedName%22%3A%22updateItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
+          "moduleId": "78024",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/register/page": {
+          "moduleId": "48765",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
         }
       },
       "layer": {
-        "app/page": "action-browser"
+        "app/(admin)/auth/page": "action-browser",
+        "app/(admin)/dashboard/page": "action-browser",
+        "app/(admin)/form/page": "action-browser",
+        "app/(admin)/jenis/page": "action-browser",
+        "app/(admin)/klasifikasi/page": "action-browser",
+        "app/(admin)/page": "action-browser",
+        "app/(admin)/pendataan/add/page": "action-browser",
+        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
+        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
+        "app/(admin)/pendataan/page": "action-browser",
+        "app/(admin)/sumber/page": "action-browser",
+        "app/_not-found/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/page": "action-browser",
+        "app/register/page": "action-browser"
       },
-      "filename": "../C:\\laragon\\www\\arsip\\src\\lib\\actions\\api.ts",
+      "filename": "src/lib/actions/api.ts",
+      "exportedName": "authRegister"
+    },
+    "40c1a6b837798ba1be02f3c560778373c117297475": {
+      "workers": {
+        "app/(admin)/auth/page": {
+          "moduleId": "79537",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/dashboard/page": {
+          "moduleId": "2648",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/jenis/page": {
+          "moduleId": "98859",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/klasifikasi/page": {
+          "moduleId": "99607",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/page": {
+          "moduleId": "40750",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/add/page": {
+          "moduleId": "20130",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/autoForm/[id]/page": {
+          "moduleId": "60881",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/edit/[id]/page": {
+          "moduleId": "50171",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/page": {
+          "moduleId": "23200",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/sumber/page": {
+          "moduleId": "87197",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/_not-found/page": {
+          "moduleId": "47367",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/login/page": {
+          "moduleId": "95883",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/page": {
+          "moduleId": "78024",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/register/page": {
+          "moduleId": "48765",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/auth/page": "action-browser",
+        "app/(admin)/dashboard/page": "action-browser",
+        "app/(admin)/form/page": "action-browser",
+        "app/(admin)/jenis/page": "action-browser",
+        "app/(admin)/klasifikasi/page": "action-browser",
+        "app/(admin)/page": "action-browser",
+        "app/(admin)/pendataan/add/page": "action-browser",
+        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
+        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
+        "app/(admin)/pendataan/page": "action-browser",
+        "app/(admin)/sumber/page": "action-browser",
+        "app/_not-found/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/page": "action-browser",
+        "app/register/page": "action-browser"
+      },
+      "filename": "src/lib/actions/api.ts",
+      "exportedName": "authVerifyToken"
+    },
+    "4041a6195c97e7b02f8465be3b608697bedc6dffb6": {
+      "workers": {
+        "app/(admin)/auth/page": {
+          "moduleId": "79537",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/dashboard/page": {
+          "moduleId": "2648",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/jenis/page": {
+          "moduleId": "98859",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/klasifikasi/page": {
+          "moduleId": "99607",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/page": {
+          "moduleId": "40750",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/add/page": {
+          "moduleId": "20130",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/autoForm/[id]/page": {
+          "moduleId": "60881",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/edit/[id]/page": {
+          "moduleId": "50171",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/page": {
+          "moduleId": "23200",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/sumber/page": {
+          "moduleId": "87197",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/_not-found/page": {
+          "moduleId": "47367",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/login/page": {
+          "moduleId": "95883",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/page": {
+          "moduleId": "78024",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/register/page": {
+          "moduleId": "48765",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/auth/page": "action-browser",
+        "app/(admin)/dashboard/page": "action-browser",
+        "app/(admin)/form/page": "action-browser",
+        "app/(admin)/jenis/page": "action-browser",
+        "app/(admin)/klasifikasi/page": "action-browser",
+        "app/(admin)/page": "action-browser",
+        "app/(admin)/pendataan/add/page": "action-browser",
+        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
+        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
+        "app/(admin)/pendataan/page": "action-browser",
+        "app/(admin)/sumber/page": "action-browser",
+        "app/_not-found/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/page": "action-browser",
+        "app/register/page": "action-browser"
+      },
+      "filename": "src/lib/actions/api.ts",
+      "exportedName": "authLogout"
+    },
+    "405c8c80fcc86efdd2aaff91ca8f65423130f55a41": {
+      "workers": {
+        "app/(admin)/auth/page": {
+          "moduleId": "79537",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/dashboard/page": {
+          "moduleId": "2648",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/jenis/page": {
+          "moduleId": "98859",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/klasifikasi/page": {
+          "moduleId": "99607",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/page": {
+          "moduleId": "40750",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/add/page": {
+          "moduleId": "20130",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/autoForm/[id]/page": {
+          "moduleId": "60881",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/edit/[id]/page": {
+          "moduleId": "50171",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/page": {
+          "moduleId": "23200",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/sumber/page": {
+          "moduleId": "87197",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/_not-found/page": {
+          "moduleId": "47367",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/login/page": {
+          "moduleId": "95883",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/page": {
+          "moduleId": "78024",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/register/page": {
+          "moduleId": "48765",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/auth/page": "action-browser",
+        "app/(admin)/dashboard/page": "action-browser",
+        "app/(admin)/form/page": "action-browser",
+        "app/(admin)/jenis/page": "action-browser",
+        "app/(admin)/klasifikasi/page": "action-browser",
+        "app/(admin)/page": "action-browser",
+        "app/(admin)/pendataan/add/page": "action-browser",
+        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
+        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
+        "app/(admin)/pendataan/page": "action-browser",
+        "app/(admin)/sumber/page": "action-browser",
+        "app/_not-found/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/page": "action-browser",
+        "app/register/page": "action-browser"
+      },
+      "filename": "src/lib/actions/api.ts",
+      "exportedName": "authRefreshToken"
+    },
+    "60b489e08158c08d66afd557c362515420d85e106e": {
+      "workers": {
+        "app/(admin)/dashboard/page": {
+          "moduleId": "2648",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/jenis/page": {
+          "moduleId": "98859",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/klasifikasi/page": {
+          "moduleId": "99607",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/add/page": {
+          "moduleId": "20130",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/autoForm/[id]/page": {
+          "moduleId": "60881",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/edit/[id]/page": {
+          "moduleId": "50171",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/page": {
+          "moduleId": "23200",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/sumber/page": {
+          "moduleId": "87197",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/login/page": {
+          "moduleId": "95883",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/register/page": {
+          "moduleId": "48765",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/dashboard/page": "action-browser",
+        "app/(admin)/form/page": "action-browser",
+        "app/(admin)/jenis/page": "action-browser",
+        "app/(admin)/klasifikasi/page": "action-browser",
+        "app/(admin)/pendataan/add/page": "action-browser",
+        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
+        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
+        "app/(admin)/pendataan/page": "action-browser",
+        "app/(admin)/sumber/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/register/page": "action-browser"
+      },
+      "filename": "src/lib/actions/api.ts",
       "exportedName": "fetchData"
     },
-    "7067a2d943a0c00a890213bd30eaa31c81ed6e2548": {
+    "70bc4c3732cfd8580e6cc20dda6630d19868ba61e4": {
       "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%2C%5B%7B%22id%22%3A%22403d20ac4cc25c0071b5a005d260d62012b5e49ad1%22%2C%22exportedName%22%3A%22authRegister%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240953005d18a255b4ee6cec49dbf22338885dbfcc3%22%2C%22exportedName%22%3A%22authLogout%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240cd49c16c02ab4b5436bcad3394955c9854487e30%22%2C%22exportedName%22%3A%22authVerifyToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240de52f83b0d4ab4d647765e9925b23698a6ed6ef8%22%2C%22exportedName%22%3A%22authRefreshToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240eff184ac8bf3dd523c4860f453c12e9cfe4105fc%22%2C%22exportedName%22%3A%22authLogin%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%226030eb4381754d3ca6e31a7994b063a10ff54dc62a%22%2C%22exportedName%22%3A%22fetchData%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227067a2d943a0c00a890213bd30eaa31c81ed6e2548%22%2C%22exportedName%22%3A%22createItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2270725050a5ecb3f8af9babe1f0b6a86246c4adc4ce%22%2C%22exportedName%22%3A%22fetchDataWithCookies%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227084cdc9c2979842d60ef9d973c073117e7bea3cb5%22%2C%22exportedName%22%3A%22deleteItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2278eb38fd67444bdda62eab5942c356a0970c20083e%22%2C%22exportedName%22%3A%22updateItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
+        "app/(admin)/dashboard/page": {
+          "moduleId": "2648",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/jenis/page": {
+          "moduleId": "98859",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/klasifikasi/page": {
+          "moduleId": "99607",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/add/page": {
+          "moduleId": "20130",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/autoForm/[id]/page": {
+          "moduleId": "60881",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/edit/[id]/page": {
+          "moduleId": "50171",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/page": {
+          "moduleId": "23200",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/sumber/page": {
+          "moduleId": "87197",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/login/page": {
+          "moduleId": "95883",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/register/page": {
+          "moduleId": "48765",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
         }
       },
       "layer": {
-        "app/page": "action-browser"
+        "app/(admin)/dashboard/page": "action-browser",
+        "app/(admin)/form/page": "action-browser",
+        "app/(admin)/jenis/page": "action-browser",
+        "app/(admin)/klasifikasi/page": "action-browser",
+        "app/(admin)/pendataan/add/page": "action-browser",
+        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
+        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
+        "app/(admin)/pendataan/page": "action-browser",
+        "app/(admin)/sumber/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/register/page": "action-browser"
       },
-      "filename": "../C:\\laragon\\www\\arsip\\src\\lib\\actions\\api.ts",
+      "filename": "src/lib/actions/api.ts",
       "exportedName": "createItem"
     },
-    "70725050a5ecb3f8af9babe1f0b6a86246c4adc4ce": {
+    "7885760cf439324eec0a881fc75b63be4a215c8d63": {
       "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%2C%5B%7B%22id%22%3A%22403d20ac4cc25c0071b5a005d260d62012b5e49ad1%22%2C%22exportedName%22%3A%22authRegister%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240953005d18a255b4ee6cec49dbf22338885dbfcc3%22%2C%22exportedName%22%3A%22authLogout%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240cd49c16c02ab4b5436bcad3394955c9854487e30%22%2C%22exportedName%22%3A%22authVerifyToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240de52f83b0d4ab4d647765e9925b23698a6ed6ef8%22%2C%22exportedName%22%3A%22authRefreshToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240eff184ac8bf3dd523c4860f453c12e9cfe4105fc%22%2C%22exportedName%22%3A%22authLogin%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%226030eb4381754d3ca6e31a7994b063a10ff54dc62a%22%2C%22exportedName%22%3A%22fetchData%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227067a2d943a0c00a890213bd30eaa31c81ed6e2548%22%2C%22exportedName%22%3A%22createItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2270725050a5ecb3f8af9babe1f0b6a86246c4adc4ce%22%2C%22exportedName%22%3A%22fetchDataWithCookies%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227084cdc9c2979842d60ef9d973c073117e7bea3cb5%22%2C%22exportedName%22%3A%22deleteItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2278eb38fd67444bdda62eab5942c356a0970c20083e%22%2C%22exportedName%22%3A%22updateItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
+        "app/(admin)/dashboard/page": {
+          "moduleId": "2648",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/jenis/page": {
+          "moduleId": "98859",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/klasifikasi/page": {
+          "moduleId": "99607",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/add/page": {
+          "moduleId": "20130",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/autoForm/[id]/page": {
+          "moduleId": "60881",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/edit/[id]/page": {
+          "moduleId": "50171",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/page": {
+          "moduleId": "23200",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/sumber/page": {
+          "moduleId": "87197",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/login/page": {
+          "moduleId": "95883",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/register/page": {
+          "moduleId": "48765",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
         }
       },
       "layer": {
-        "app/page": "action-browser"
+        "app/(admin)/dashboard/page": "action-browser",
+        "app/(admin)/form/page": "action-browser",
+        "app/(admin)/jenis/page": "action-browser",
+        "app/(admin)/klasifikasi/page": "action-browser",
+        "app/(admin)/pendataan/add/page": "action-browser",
+        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
+        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
+        "app/(admin)/pendataan/page": "action-browser",
+        "app/(admin)/sumber/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/register/page": "action-browser"
       },
-      "filename": "../C:\\laragon\\www\\arsip\\src\\lib\\actions\\api.ts",
-      "exportedName": "fetchDataWithCookies"
-    },
-    "7084cdc9c2979842d60ef9d973c073117e7bea3cb5": {
-      "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%2C%5B%7B%22id%22%3A%22403d20ac4cc25c0071b5a005d260d62012b5e49ad1%22%2C%22exportedName%22%3A%22authRegister%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240953005d18a255b4ee6cec49dbf22338885dbfcc3%22%2C%22exportedName%22%3A%22authLogout%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240cd49c16c02ab4b5436bcad3394955c9854487e30%22%2C%22exportedName%22%3A%22authVerifyToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240de52f83b0d4ab4d647765e9925b23698a6ed6ef8%22%2C%22exportedName%22%3A%22authRefreshToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240eff184ac8bf3dd523c4860f453c12e9cfe4105fc%22%2C%22exportedName%22%3A%22authLogin%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%226030eb4381754d3ca6e31a7994b063a10ff54dc62a%22%2C%22exportedName%22%3A%22fetchData%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227067a2d943a0c00a890213bd30eaa31c81ed6e2548%22%2C%22exportedName%22%3A%22createItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2270725050a5ecb3f8af9babe1f0b6a86246c4adc4ce%22%2C%22exportedName%22%3A%22fetchDataWithCookies%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227084cdc9c2979842d60ef9d973c073117e7bea3cb5%22%2C%22exportedName%22%3A%22deleteItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2278eb38fd67444bdda62eab5942c356a0970c20083e%22%2C%22exportedName%22%3A%22updateItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/page": "action-browser"
-      },
-      "filename": "../C:\\laragon\\www\\arsip\\src\\lib\\actions\\api.ts",
-      "exportedName": "deleteItem"
-    },
-    "78eb38fd67444bdda62eab5942c356a0970c20083e": {
-      "workers": {
-        "app/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%2C%5B%7B%22id%22%3A%22403d20ac4cc25c0071b5a005d260d62012b5e49ad1%22%2C%22exportedName%22%3A%22authRegister%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240953005d18a255b4ee6cec49dbf22338885dbfcc3%22%2C%22exportedName%22%3A%22authLogout%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240cd49c16c02ab4b5436bcad3394955c9854487e30%22%2C%22exportedName%22%3A%22authVerifyToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240de52f83b0d4ab4d647765e9925b23698a6ed6ef8%22%2C%22exportedName%22%3A%22authRefreshToken%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2240eff184ac8bf3dd523c4860f453c12e9cfe4105fc%22%2C%22exportedName%22%3A%22authLogin%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%226030eb4381754d3ca6e31a7994b063a10ff54dc62a%22%2C%22exportedName%22%3A%22fetchData%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227067a2d943a0c00a890213bd30eaa31c81ed6e2548%22%2C%22exportedName%22%3A%22createItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2270725050a5ecb3f8af9babe1f0b6a86246c4adc4ce%22%2C%22exportedName%22%3A%22fetchDataWithCookies%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%227084cdc9c2979842d60ef9d973c073117e7bea3cb5%22%2C%22exportedName%22%3A%22deleteItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%2C%7B%22id%22%3A%2278eb38fd67444bdda62eab5942c356a0970c20083e%22%2C%22exportedName%22%3A%22updateItem%22%2C%22filename%22%3A%22..%2FC%3A%5C%5Claragon%5C%5Cwww%5C%5Carsip%5C%5Csrc%5C%5Clib%5C%5Cactions%5C%5Capi.ts%22%7D%5D%5D%5D&__client_imported__=true!",
-          "async": false
-        }
-      },
-      "layer": {
-        "app/page": "action-browser"
-      },
-      "filename": "../C:\\laragon\\www\\arsip\\src\\lib\\actions\\api.ts",
+      "filename": "src/lib/actions/api.ts",
       "exportedName": "updateItem"
+    },
+    "703f2104e5aad7c34af0fbaa22cc197d267580311c": {
+      "workers": {
+        "app/(admin)/dashboard/page": {
+          "moduleId": "2648",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/jenis/page": {
+          "moduleId": "98859",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/klasifikasi/page": {
+          "moduleId": "99607",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/add/page": {
+          "moduleId": "20130",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/autoForm/[id]/page": {
+          "moduleId": "60881",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/edit/[id]/page": {
+          "moduleId": "50171",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/pendataan/page": {
+          "moduleId": "23200",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/(admin)/sumber/page": {
+          "moduleId": "87197",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/login/page": {
+          "moduleId": "95883",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        },
+        "app/register/page": {
+          "moduleId": "48765",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/dashboard/page": "action-browser",
+        "app/(admin)/form/page": "action-browser",
+        "app/(admin)/jenis/page": "action-browser",
+        "app/(admin)/klasifikasi/page": "action-browser",
+        "app/(admin)/pendataan/add/page": "action-browser",
+        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
+        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
+        "app/(admin)/pendataan/page": "action-browser",
+        "app/(admin)/sumber/page": "action-browser",
+        "app/login/page": "action-browser",
+        "app/register/page": "action-browser"
+      },
+      "filename": "src/lib/actions/api.ts",
+      "exportedName": "deleteItem"
     }
   },
   "edge": {},
