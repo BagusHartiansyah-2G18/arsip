@@ -11,7 +11,8 @@
     "dev:dashboard": "next dev --turbo",
     "seed": "node prisma/seed.js",
     "prisma": "npx prisma generate ",
-    "export": "next export"
+    "export": "next export",
+    "start-prod": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
