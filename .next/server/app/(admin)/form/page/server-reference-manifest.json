@@ -1,0 +1,140 @@
+{
+  "node": {
+    "40a9feb6165a8d1644c5c18ea7d81b2f5adfbbfb79": {
+      "workers": {
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "authLogin",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/form/page": "action-browser"
+      },
+      "exportedName": "authLogin",
+      "filename": "src/lib/actions/api.ts"
+    },
+    "4041fdfe2de72b3778257274eb746a312561db8aba": {
+      "workers": {
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "authRegister",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/form/page": "action-browser"
+      },
+      "exportedName": "authRegister",
+      "filename": "src/lib/actions/api.ts"
+    },
+    "40345d4c679f8f480ee364f88d69f57145d91277c6": {
+      "workers": {
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "authVerifyToken",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/form/page": "action-browser"
+      },
+      "exportedName": "authVerifyToken",
+      "filename": "src/lib/actions/api.ts"
+    },
+    "40e209703d8beb8fbfce41c4f96a29d1c2ccacb621": {
+      "workers": {
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "authLogout",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/form/page": "action-browser"
+      },
+      "exportedName": "authLogout",
+      "filename": "src/lib/actions/api.ts"
+    },
+    "40f632810840280e98e8caad9a9d3b5147a8d7cc11": {
+      "workers": {
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "authRefreshToken",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/form/page": "action-browser"
+      },
+      "exportedName": "authRefreshToken",
+      "filename": "src/lib/actions/api.ts"
+    },
+    "604826d92d9db1e5d01f0500a2e332ae67612c73e3": {
+      "workers": {
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "fetchData",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/form/page": "action-browser"
+      },
+      "exportedName": "fetchData",
+      "filename": "src/lib/actions/api.ts"
+    },
+    "70512beb9585b07b1e55ea0cc3245b1dc71afb589f": {
+      "workers": {
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "createItem",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/form/page": "action-browser"
+      },
+      "exportedName": "createItem",
+      "filename": "src/lib/actions/api.ts"
+    },
+    "7850229be610fd94e04e6cf5156435b33bac34bb34": {
+      "workers": {
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "updateItem",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/form/page": "action-browser"
+      },
+      "exportedName": "updateItem",
+      "filename": "src/lib/actions/api.ts"
+    },
+    "70f865c19e1caa25f5da0d079c48edbaad91f2ba2c": {
+      "workers": {
+        "app/(admin)/form/page": {
+          "moduleId": "80804",
+          "async": false,
+          "exportedName": "deleteItem",
+          "filename": "src/lib/actions/api.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/form/page": "action-browser"
+      },
+      "exportedName": "deleteItem",
+      "filename": "src/lib/actions/api.ts"
+    }
+  },
+  "edge": {}
+}
