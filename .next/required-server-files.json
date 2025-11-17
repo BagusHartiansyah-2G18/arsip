@@ -110,7 +110,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\laragon\\www\\dashboard",
+    "outputFileTracingRoot": "C:\\laragon\\www\\arsip",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -303,10 +303,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "C:\\laragon\\www\\dashboard"
+      "root": "C:\\laragon\\www\\arsip"
     }
   },
-  "appDir": "C:\\laragon\\www\\dashboard",
+  "appDir": "C:\\laragon\\www\\arsip",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",
