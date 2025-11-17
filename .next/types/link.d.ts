@@ -38,6 +38,7 @@ declare namespace __next_route_internal_types__ {
     | `/api/analisis/sumber`
     | `/api/auth/login`
     | `/api/bidang`
+    | `/api/check`
     | `/api/dashboard`
     | `/api/namaform`
     | `/api/pendataan`

@@ -21,6 +21,7 @@
   "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
   "/api/auth/login/route": "/api/auth/login",
   "/api/bidang/route": "/api/bidang",
+  "/api/check/route": "/api/check",
   "/api/dashboard/route": "/api/dashboard",
   "/favicon.ico/route": "/favicon.ico",
   "/login/page": "/login",

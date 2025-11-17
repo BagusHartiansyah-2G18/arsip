@@ -21,6 +21,7 @@
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/api/auth/login/route": "app/api/auth/login/route.js",
   "/api/bidang/route": "app/api/bidang/route.js",
+  "/api/check/route": "app/api/check/route.js",
   "/api/dashboard/route": "app/api/dashboard/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/login/page": "app/login/page.js",
