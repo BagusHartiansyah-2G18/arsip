@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
     serverActions: {
       bodySizeLimit: '10mb'
     },
-    useLightningcss: true,
-    // useLightningcss: false,
+    // useLightningcss: true,
+    useLightningcss: false,
     optimizePackageImports: []
   },
   typedRoutes: true,
