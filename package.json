@@ -17,7 +17,8 @@
     "prisma:init": "npx prisma init",
     "prisma:mig": "npx prisma migrate dev",
     "export": "next export",
-    "start": "cross-env NODE_ENV=production node server.js"
+    "start": "cross-env NODE_ENV=production node server.js",
+    "serve":"node server.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
