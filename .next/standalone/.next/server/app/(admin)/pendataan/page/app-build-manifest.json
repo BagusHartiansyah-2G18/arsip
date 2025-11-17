@@ -1,0 +1,26 @@
+{
+  "pages": {
+    "/(admin)/pendataan/page": [
+      "static/chunks/ff1a16fafef87110.js",
+      "static/chunks/7dd66bdf8a7e5707.js",
+      "static/chunks/a0d79456e4df1d15.css",
+      "static/chunks/1408d9e9cb66ddd2.js",
+      "static/chunks/5399561052c129f1.js",
+      "static/chunks/3f6abb6b517aa60f.js",
+      "static/chunks/c9965f7434a99454.js",
+      "static/chunks/adc7558a29a940c6.css",
+      "static/chunks/0c8f99e508701948.js",
+      "static/chunks/d6439591b88e93cd.js",
+      "static/chunks/fbf68e062eb8eb97.js",
+      "static/chunks/e5eb1e4088dedf57.js",
+      "static/chunks/43016f9a0ae5e9c9.js",
+      "static/chunks/e1bcd3a77102413c.js",
+      "static/chunks/92b250cade9bb666.js",
+      "static/chunks/fc318aacfce6b400.js",
+      "static/chunks/fa89f42ce0746633.js",
+      "static/chunks/d840202ccc76954a.js",
+      "static/chunks/4a4074717300b14a.js",
+      "static/chunks/turbopack-0409376d4ca8decb.js"
+    ]
+  }
+}
