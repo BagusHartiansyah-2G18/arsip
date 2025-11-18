@@ -2,7 +2,21 @@ import { authStorageUtils } from "@/hooks";
 import { getSession } from "next-auth/react";
 
 // API Configuration
-export const API_BASE_URL = 'http://localhost:3000';
+// export const API_BASE_URL = 'https://siarsip.bpkad-ksb.com';
+export function getBaseUrl(): string {
+  if (typeof window !== "undefined") {
+    // 👉 Client-side
+    return window.location.origin;
+  }
+
+  // 👉 Server-side (SSR / API / Standalone)
+  return process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:8080";
+}
+
+export const API_BASE_URL = getBaseUrl();
+
+
+
 export const API_ENDPOINT = `${API_BASE_URL}/api`;
 
 // Environment-based configuration (optional)
