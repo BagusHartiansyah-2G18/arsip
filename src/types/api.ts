@@ -66,6 +66,7 @@ export interface IPendataanForm {
   docC: string | number; // tergantung tipe aslinya
   file: string; // jika ini file upload, ubah ke File atau IAfile
   status: string;
+  formNm?: string;
 }
 export interface Iaction {
     id: string;

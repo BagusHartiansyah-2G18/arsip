@@ -196,10 +196,14 @@ export async function createItem<T>(endpoint: string, formData: FormData, token:
         // Log form data entries (without sensitive data)
         const formDataEntries: Record<string, string> = {};
         for (const [key, value] of formData.entries()) {
-            if (value instanceof File) {
-                formDataEntries[key] = `[FILE: ${value.name}, ${value.size} bytes, ${value.type}]`;
-            } else {
-                formDataEntries[key] = value;
+            try {
+                if (value instanceof File) {
+                    formDataEntries[key] = `[FILE: ${value.name}, ${value.size} bytes, ${value.type}]`;
+                } else {
+                    formDataEntries[key] = value;
+                }
+            } catch (error) {
+                formDataEntries[key] = String(value);
             }
         }
 
@@ -277,10 +281,14 @@ export async function updateItem<T>(endpoint: string, id: string | number, formD
         // Log form data entries (without sensitive data)
         const formDataEntries: Record<string, string> = {};
         for (const [key, value] of formData.entries()) {
-            if (value instanceof File) {
-                formDataEntries[key] = `[FILE: ${value.name}, ${value.size} bytes, ${value.type}]`;
-            } else {
-                formDataEntries[key] = value;
+            try {
+                if (value instanceof File) {
+                    formDataEntries[key] = `[FILE: ${value.name}, ${value.size} bytes, ${value.type}]`;
+                } else {
+                    formDataEntries[key] = value;
+                }
+            } catch (error) {
+                formDataEntries[key] = String(value);
             }
         }
 

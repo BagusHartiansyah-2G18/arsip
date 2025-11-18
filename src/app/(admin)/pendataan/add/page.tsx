@@ -46,6 +46,7 @@ export default function AddCategoryPage() {
         file: '',
         idBidang:'',
         status: '',
+        formNm: '',
 
     };
     const [local, _local] = useState<{next: boolean;  dt: IPendataanForm;}>({ next: false, dt:defaultDT,
@@ -55,10 +56,7 @@ export default function AddCategoryPage() {
     useEffect(() => {
         const fetchData = async () => {
             const saved = await __duser("formAddArsip") as IPendataanForm;
-            if (saved) {
-                _local({ next: true, dt: saved });
-            }
-            _local({ next: true, dt:defaultDT });
+            _local({ next: true, dt: saved||defaultDT });
         };
         fetchData();
     }, []);
@@ -135,7 +133,7 @@ export default function AddCategoryPage() {
             const resp = await createPendataan(formData); // kirim FormData, bukan object biasa
 
             if (resp.kd) {
-            await localStorage.removeItem("formAddArsip");
+                await localStorage.removeItem("formAddArsip");
                 setConfirmItem(resp.id);
                 setConfirmOpen(true);
             }

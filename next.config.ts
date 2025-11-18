@@ -40,6 +40,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   }, 
   output: "standalone",
+  // assetPrefix: '_next/static',
 };
 
 export default nextConfig

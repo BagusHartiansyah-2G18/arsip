@@ -45,10 +45,9 @@ export default function AddCategoryPage() {
         status: '',
 
     };
-    const [local, _local] = useState<{next: boolean;  dt: IPendataanForm;}>({ next: false, dt:defaultDT,
-    }); 
+    const [local, _local] = useState<{next: boolean;  dt: IPendataanForm;}>({ next: false, dt:defaultDT,}); 
 
-    if(Object.keys(local.dt).length == 0 && data.length>0){
+    if(!local.next  && data.length>0){
         
         _local({next:true,dt:data.map(v=>({
             ...v,

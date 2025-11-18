@@ -19,17 +19,13 @@ export async function GET(req: NextRequest ) {
 }
 
 export async function POST(req: NextRequest ) {
-  return portal(req, async (v) => { 
-      // const { email, password } = await req.json();
+  return portal(req, async (v) => {  
        const { level,id } = v;
         const where = level === 1 ? { idUser: id } : {}; 
         
-      try {
-        
-        
-        const body = await req.json();
-        console.log(body);
-        await prisma.arsip.create({data: {...body,idUser:id, created_by:id}});
+      try { 
+        const body = await req.json(); 
+        await prisma.arsip.create({data: {...body,idUser:id, created_by:id,formNm:"",formVal:""}});
         const result = await prisma.arsip.findFirst({
           where,
           orderBy: {

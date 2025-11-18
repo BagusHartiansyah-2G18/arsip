@@ -50,7 +50,7 @@ const formSchema = z.object({
     retensi:stringFieldValidator,
     keterangan:stringFieldValidator,
     status:stringFieldValidator,
-    // formNm: stringFieldValidator,
+    formNm: stringFieldValidator,
     // formVal: stringFieldValidator,
 });
 
@@ -97,6 +97,8 @@ export function CFpendataan({
                 ? String(initialData.docC)
                 : undefined,
 
+            formNm: initialData?.formNm || '---',
+
 
             file:initialData?.file|| '',
             status:initialData?.status|| '', 
@@ -108,7 +110,7 @@ export function CFpendataan({
         try {
             await onSubmit(data);
         } catch (error) {
-            console.log('Error submitting form:', error);
+            // console.log('Error submitting form:', error);
         }
     };
 
@@ -126,7 +128,7 @@ export function CFpendataan({
     }, [uraianPoint, form]);
 
     useEffect(() => {
-    const subscription = form.watch((value) => {
+    const subscription = form.watch((value) => { 
         _duser(value, "formAddArsip"); // simpan ke localStorage
     });
 
@@ -243,10 +245,24 @@ export function CFpendataan({
                                             const kolom = [{"Dari Tahun":""},{"Hingga Tahun":""}];
                                             const initial = data ? data :kolom;   
                                             
+                                            // const handleSendValue = React.useCallback(
+                                            //     (val: Array<Record<string, string>>) => field.onChange(JSON.stringify(val.length === 0 ? [] : val)),
+                                            //     [field]
+                                            // );
+                                            interface IcdtItem {
+                                                nama: string;
+                                                value: string;
+                                                keterangan?: string;
+                                            }
                                             const handleSendValue = React.useCallback(
-                                                (val: Array<Record<string, string>>) => field.onChange(JSON.stringify(val.length === 0 ? [] : val)),
+                                                (val: IcdtItem[]) => {
+                                                    // Convert IcdtItem[] ke Record<string,string>[] (hanya nama dan value)
+                                                    const converted: Record<string, string>[] = val.map(item => ({ [item.nama]: item.value }));
+                                                    field.onChange(JSON.stringify(converted.length === 0 ? [] : converted));
+                                                },
                                                 [field]
                                             );
+
                                             return ( 
                                                 <FormItem className='w-full'>
                                                     <SpendataanGroup
@@ -480,7 +496,7 @@ export function CFpendataan({
                                             const fieldOnline = [{"link":''},{"lokasi penyimpanan":""},{"nama file":""}];
                                             const initialOnline = online ? online : fieldOnline;     
                                             const current = JSON.parse(field.value || '{}');
-
+                                            
                                             return (
                                                 // border border-gray-200 p-1
                                                 <FormItem className='w-full'>
