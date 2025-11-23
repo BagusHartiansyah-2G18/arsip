@@ -25,6 +25,7 @@ import { Grid3X3, List } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { motion, AnimatePresence } from 'framer-motion';
+import { DataTableToolbarFilter } from '@/components/data-table/DataTable.tsx/DataTableToolbarFilter';
 
 type ViewMode = 'list' | 'grid';
 
@@ -104,6 +105,10 @@ export function DataTable<TData, TValue>({
     const [deleteError, setDeleteError] = React.useState(false);
     const [viewMode, setViewMode] = React.useState<ViewMode>(defaultViewMode);
 
+    const [globalFilter, setGlobalFilter] = React.useState("");
+
+
+
     // Ensure modal resets to confirm state when opened
     const setDeleteModalOpenedWithReset = React.useCallback((open: boolean) => {
         if (open) {
@@ -140,12 +145,15 @@ export function DataTable<TData, TValue>({
     const table = useReactTable({
         data,
         columns: finalColumns,
+        onGlobalFilterChange: setGlobalFilter,
+        getFilteredRowModel: getFilteredRowModel(),
+        
         onSortingChange: setSorting,
         onColumnFiltersChange: setColumnFilters,
         getCoreRowModel: getCoreRowModel(),
         getPaginationRowModel: getPaginationRowModel(),
         getSortedRowModel: getSortedRowModel(),
-        getFilteredRowModel: getFilteredRowModel(),
+        
         onColumnVisibilityChange: setColumnVisibility,
         onRowSelectionChange: setRowSelection,
         state: {
@@ -153,13 +161,16 @@ export function DataTable<TData, TValue>({
             columnFilters,
             columnVisibility,
             rowSelection,
+            globalFilter
         },
     });
 
     // Get the first available column for search if searchKey doesn't exist
-    const searchColumn = React.useMemo(() => {
-        const allColumns = table.getAllColumns();
-        const specifiedColumn = allColumns.find(col => col.id === searchKey);
+    const searchColumn = React.useMemo(() => { 
+        
+        const allColumns = table.getAllColumns(); 
+        const specifiedColumn = allColumns.find(col =>true);
+        // (searchKey.split(",").includes(col.id))
         if (specifiedColumn) {
             return specifiedColumn;
         }
@@ -192,13 +203,12 @@ export function DataTable<TData, TValue>({
                 if (refresh) refresh();
             }
         }
-    };
-
+    }; 
     // Render grid view
     const renderGridView = () => {
         if (!gridViewComponent) return null;
 
-        // Get paginated data for grid view
+        // Get paginated data for grid view 
         const paginatedData = table.getRowModel().rows.map(row => row.original);
 
         if (loading) {
@@ -244,9 +254,7 @@ export function DataTable<TData, TValue>({
                 ))}
             </div>
         );
-    };
-
-
+    }; 
     return (
         <div className="bg-white rounded-lg border border-gray-200 p-4">
             {/* Header */}
@@ -254,14 +262,22 @@ export function DataTable<TData, TValue>({
 
             {/* Toolbar with View Switcher */}
             <div className="flex items-center justify-between mb-4">
-                <DataTableToolbar
+                {/* <DataTableToolbar
                     searchPlaceholder={searchPlaceholder}
                     searchColumn={searchColumn}
                     onOpenFilter={onOpenFilter}
                     onAdd={onAdd}
                     addButtonText={addButtonText}
                     table={table}
+                /> */}
+                <DataTableToolbarFilter
+                    searchPlaceholder={searchPlaceholder}
+                    onOpenFilter={onOpenFilter}
+                    onAdd={onAdd}
+                    addButtonText={addButtonText}
+                    table={table}
                 />
+
 
                 {/* View Mode Switcher */}
                 {enableGridView && (

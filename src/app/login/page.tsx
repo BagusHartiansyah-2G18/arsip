@@ -106,7 +106,12 @@ export default function LoginPage() {
     };
 
     return (
-        <div  style={{ backgroundImage:'url("bg.jpg")' , backgroundSize:"cover"}}>
+        // <div  style={{ backgroundImage:'url("bg.jpg")' , backgroundSize:"cover"}}>
+        <div className="gradient-bg min-h-screen overflow-x-hidden relative">
+            {/* Animated background shapes */}
+            <div className="shape-blob one"></div>
+            <div className="shape-blob two"></div>
+            <div className="shape-blob"></div>
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-50 to-blue-50 px-4 py-8"  style={{ background:"rgba(0,0,0,0.2)"}}>
             <div className="w-full max-w-md">
                 {/* Logo/Brand */}
@@ -114,14 +119,14 @@ export default function LoginPage() {
                     {/* <div className="mx-auto w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mb-4">
                         <span className="text-white text-2xl font-bold">P</span>
                     </div> */}
-                    <h1 className="text-3xl font-bold text-gray-900"><Link href={"/"}>SI ARSIP</Link></h1>
+                    <h1 className="text-3xl font-bold "><Link href={"/"}>SI ARSIP</Link></h1>
                     <p className="text-white-600 mt-2">Welcome back! Please sign in to your account.</p>
                 </div>
 
                 {/* Login Form */}
                 <Card className="shadow-lg border-0">
                     <CardHeader className="space-y-1">
-                        <CardTitle className="text-2xl font-bold text-center">Sign In</CardTitle>
+                        <CardTitle className="text-2xl font-bold text-center ">Sign In</CardTitle>
                         <CardDescription className="text-center">
                             Enter your credentials to access your account
                         </CardDescription>

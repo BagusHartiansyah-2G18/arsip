@@ -54,9 +54,7 @@ export default function dataPage() {
     
     // Show error messages if any API calls failed
     const hasError = dataError;
-    const errorMessage = dataError; 
-
-    console.log(ddetail);
+    const errorMessage = dataError;  
     
  
     return (
@@ -223,6 +221,7 @@ export default function dataPage() {
                     const category = item as Iarsip;
                     return `Apakah Anda yakin ingin menghapus uraian "${category.uraian}"?`;
                 }}
+                searchKey="kategori,uraian,status"
                 searchPlaceholder="Cari kategori..."
                 addButtonText="Entri Arsip Baru"
                 emptyStateTitle="Tidak ada kategori"

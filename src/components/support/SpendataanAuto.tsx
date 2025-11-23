@@ -19,10 +19,15 @@ export function SpendataanAuto({ judul, field = [], sendValue, initialData = [],
   const [items, setItems] = useState<{ nama: string; value: string }[]>(initialData);
   const [newNama, setNewNama] = useState('');
   const [error, setError] = useState<string | null>(null);
+  const [focus, _focus] = useState<boolean>(true);
 
   useEffect(() => {
-    sendValue(items);
+    if(focus){
+      sendValue(items);
+    }
   }, [items, sendValue]);
+  
+
 
   const handleAddNama = () => {
     if (!newNama.trim()) {
@@ -93,7 +98,14 @@ export function SpendataanAuto({ judul, field = [], sendValue, initialData = [],
                 onChange={(e) => handleValueChange(idx, e.target.value)}
                 placeholder={`Isi ${item.nama}`}
                 className="text-xs h-8 rounded-md border-gray-200 focus:border-emerald-300 focus:ring-emerald-100 flex-1"
+                onFocus={() => {
+                  _focus(false)
+                }}
+                onBlur={() => {
+                  _focus(true)
+                }}
               />
+
               <button
                 type="button"
                 onClick={() => handleDeleteNama(idx)}

@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 export async function GET(req: NextRequest ) { 
     return portal(req, async (token) => {
         const data = await prisma.arsip.groupBy({
-          by: ['formAs'],
+          by: ['formAs','formNm'],
           where: {
             formAs: { 
               notIn: ['', '---'],
@@ -17,6 +17,8 @@ export async function GET(req: NextRequest ) {
           } 
         });
 
-        return NextResponse.json(data.map((v:{formAs:string})=>({value:v.formAs,label:v.formAs,id:v.formAs}))||[]);
+        return NextResponse.json(data.map((v:{formAs:string,formNm:string})=>({
+          value:JSON.stringify(JSON.parse(v.formNm).map((f:{})=>({...f,value:''}))),
+          label:v.formAs,id:v.formAs}))||[]);
     },[1,2]);
 }

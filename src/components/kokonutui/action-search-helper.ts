@@ -43,7 +43,7 @@ export function makeOptions(fdt:Iops[]) {
     //  }]
     return createActionSearchOptions(
         fdt,
-        (v) => v.id.toString(),
+        (v) => v.value,
         (v) => v.label,
         (v) => v.description,
         React.createElement(Tag, { className: "h-4 w-4 text-blue-500" })

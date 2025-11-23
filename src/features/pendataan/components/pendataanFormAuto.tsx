@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useEffect ,useState} from 'react';
+import React, { useEffect ,useState,useMemo} from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import {  z } from 'zod';
+import {  number, z } from 'zod';
 import { useWatch } from 'react-hook-form';
 
 import { Sdialog } from '@/components/support/Sdialog';
@@ -49,6 +49,11 @@ interface CategoryDestinationFormProps {
     isLoading?: boolean;
     submitButtonText?: string;
 }
+type TamForm = {
+  formAs: string;
+  count: number;
+};
+
 
 export function CFpendataanAuto({
     initialData,
@@ -64,6 +69,10 @@ export function CFpendataanAuto({
     const [confirmSuccess, setConfirmSuccess] = useState(false);
     const [confirmError, setConfirmError] = useState(false);
     const [confirmItem, setConfirmItem] = useState<any>(null);
+    const [tamForm, _tamForm] = useState<TamForm>({
+        formAs: "",
+        count: 0,
+    });
 
     const [tdata, _tdata] = useState<Iform>();
 
@@ -104,45 +113,66 @@ export function CFpendataanAuto({
         // }
     };
 
+    const formAs = useWatch({
+        control: form.control,
+        name: 'formAs',
+    }); 
+
+
     const formNmValue = useWatch({
         control: form.control,
         name: 'formNm',
-    });
-
-    // useEffect(() => {
-    //     try {
-    //         const val = JSON.parse((formNmValue == "{}"?"[]":formNmValue) || '[]'); 
-    //         form.setValue('formVal', val?.map(v=>v.value).join(",")||"[]");
-    //     } catch (err) {
-    //         console.error('Invalid JSON in formNm:', err);
-    //     }
-    // }, [formNmValue]);  
+    }); 
     type FormItem = { value: string };
     useEffect(() => {
-        try {
-            const raw = formNmValue === '{}' ? '[]' : formNmValue || '[]';
-            const parsed = JSON.parse(raw) as FormItem[];
+        try {  
+            if (formAs !== ''  && formAs !== '---' && tamForm.formAs=="") {
+                const currentNm = form.getValues('formNm');  
+                const formSelect =  dformOps.filter(v=>v.label == formAs)
+                if (currentNm !== formAs && formSelect.length>0) {
+                    _tamForm({count:JSON.parse(formSelect[0].value).length,formAs:formSelect[0].label})
+                    form.setValue('formNm', formSelect[0].value);
+                    form.setValue('formAs', '---');
+                    form.setValue('formVal', '[]');
+                }
+            } else {
+                try {
+                    const raw = formNmValue === '{}' ? '[]' : formNmValue || '[]';
+                    const parsed = JSON.parse(raw) as FormItem[]; 
+                    
+                    const joined = Array.isArray(parsed)
+                    ? parsed.map((v: FormItem) => v.value).join(',')
+                    : '';
 
-            const joined = Array.isArray(parsed)
-            ? parsed.map((v: FormItem) => v.value).join(',')
-            : '';
-
-            form.setValue('formVal', joined || '[]');
-        } catch (err) {
-            console.error('Invalid JSON in formNm:', err);
-            form.setValue('formVal', '[]');
-        }
-    }, [formNmValue, form]);
+                    // hanya set kalau berbeda
+                    const currentVal = form.getValues('formVal');
+                    if (currentVal !== joined) {
+                        form.setValue('formVal', joined || '[]');
+                    }
+                } catch (err) {
+                    console.error('Invalid JSON in formNm:', err);
+                    form.setValue('formVal', '[]');
+                }
+            }
+        } catch (err) {}
+        }, [formNmValue, formAs, form]);
 
 
     useEffect(() => {
         const checkForm = async () => {
-            const val = await form.getValues("formNm");
+            const val = await form.getValues("formNm"); 
+            try {
+                if(tamForm.count>0 && (JSON.parse(val).length !=tamForm.count) ){
+                    _tamForm({count:0,formAs:''})
+                }
+            } catch (error) {
+                
+            }
             setIsChecked(val !== undefined && val.length > 3);
         };
         checkForm();
-    }, [formNmValue]);
- 
+    }, [formNmValue,formAs]); 
+    
     
     return (
         <div className="bg-white rounded-lg border border-gray-200">
@@ -174,12 +204,13 @@ export function CFpendataanAuto({
                                                         actions={opdData}
                                                         placeholder="Pilih Status Dokument"
                                                         value={selected?.label || ''}
-                                                        // value={''}
-                                                        onSelect={(action) => field.onChange(action?.value || '')}
+                                                        onSelect={(action) =>{
+                                                            field.onChange(action?.label || '')
+                                                        }}
                                                         onClear={() => field.onChange('')}
                                                     />
                                                 </FormControl>
-                                                <FormMessage className="text-xs" />
+                                                {/* <FormMessage className="text-xs" /> */}
                                             </FormItem>
                                         );
                                     }}
@@ -189,25 +220,17 @@ export function CFpendataanAuto({
                                 control={form.control}
                                 name="formNm"
                                 render={({ field,fieldState }) => {
-                                    const parsedValue = (() => {
-                                        try {
-                                            return JSON.parse(field.value || '{}');
-                                        } catch {
-                                            return {};
-                                        }
-                                    })();
-
+                                    const parsedValue = JSON.parse(formNmValue || '{}');
                                     const hard = Array.isArray(parsedValue) ? parsedValue : [];
-                                    const fieldHard = hard.map(obj => Object.keys(obj)[0]); // ambil nama field dari objek
-                                    
-                                    
+                                    const fieldHard = hard.map(obj => Object.keys(obj)[0]);
                                     return (
                                         <FormItem className='w-full'>
                                             <SpendataanAuto
+                                                key={field.value} 
                                                 judul="Tambah Catatan Tambahan"
                                                 field={fieldHard}
                                                 initialData={hard}
-                                                sendValue={(val) => {
+                                                sendValue={(val) => { 
                                                     const updated = val.length === 0 ? undefined : val;
                                                     field.onChange(JSON.stringify(updated));
                                                 }}
