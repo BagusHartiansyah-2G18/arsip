@@ -71,6 +71,7 @@ export function CFpendataan({
     onCancel,
     isLoading = false,
     submitButtonText = 'Simpan Kategori'
+    
 }: CategoryDestinationFormProps) {    
 
     const { data } = useApi<Ibidang>(API_ROUTES.arsip.bidang);  

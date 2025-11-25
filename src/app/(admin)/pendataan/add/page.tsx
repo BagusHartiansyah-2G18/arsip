@@ -18,6 +18,7 @@ export default function AddCategoryPage() {
     const [error, _error] = useState({ on: false, message: "", onRetry: () => { } });
 
     const [confirmOpen, setConfirmOpen] = useState(false);
+    const [savedke, _savedke] = useState(true);
     const [confirmLoading, setConfirmLoading] = useState(false);
     const [confirmSuccess, setConfirmSuccess] = useState(false);
     const [confirmError, setConfirmError] = useState(false);
@@ -131,8 +132,8 @@ export default function AddCategoryPage() {
             formData.append("status", data.status);
 
             const resp = await createPendataan(formData); // kirim FormData, bukan object biasa
-
-            if (resp.kd) {
+            if (resp.id.length>5) {
+                _savedke(false);
                 await localStorage.removeItem("formAddArsip");
                 setConfirmItem(resp.id);
                 setConfirmOpen(true);
@@ -173,7 +174,7 @@ export default function AddCategoryPage() {
             />
 
             {
-                local.next &&
+                local.next && savedke &&
                 <CFpendataan
                     onSubmit={handleSubmit}
                     onCancel={handleCancel}
