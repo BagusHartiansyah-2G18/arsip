@@ -488,7 +488,7 @@ export function CFpendataan({
                                         name="file"
                                         render={({ field }) => {
                                             const { hard,soft,online }=JSON.parse(field.value || '{}'); 
-                                            const fieldHard = [{"No Lemari":""},{"No Laci":""}];
+                                            const fieldHard = [{"No Lemari":""},{"No rak":""}];
                                             const initialHardcopy = hard ? hard :fieldHard; 
                                             
                                             const fieldSoft = [{"lokasi penyimpanan":""},{"nama file":""}];

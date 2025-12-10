@@ -258,7 +258,8 @@ const Sidebar: React.FC<SidebarProps> = ({
                                         transition={{ delay: 0.1, duration: 0.2 }}
                                         className="w-8 h-8 rounded-md bg-emerald-100 text-emerald-700 flex items-center justify-center"
                                     >
-                                        <MapPin className="w-4 h-4" />
+                                        {/* <MapPin className="w-4 h-4" /> */}
+                                        <b style={{color:"green"}}> V1</b>
                                     </motion.div>
                                     <motion.div
                                         initial={{ opacity: 0 }}
@@ -266,7 +267,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                                         transition={{ delay: 0.2, duration: 0.2 }}
                                         className="text-sm font-semibold text-gray-900"
                                     >
-                                        SI ARSIP
+                                        SI ARSIP 
                                     </motion.div>
                                 </motion.div>
                             ) : (
