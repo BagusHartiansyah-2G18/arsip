@@ -14,6 +14,7 @@ export async function POST(req: NextRequest) {
 
   const user = await prisma.user.findUnique({ where: { email } });
   if (!user) return NextResponse.json({ error: "User tidak ditemukan" }, { status: 404 }); 
+  // console.log(await bcrypt.);
   
   const isValid = await bcrypt.compare(password, user.pass);
   if (!isValid) return NextResponse.json({ error: "Password salah" }, { status: 401 });

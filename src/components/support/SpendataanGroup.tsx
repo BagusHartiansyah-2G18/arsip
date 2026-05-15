@@ -178,7 +178,7 @@ export function SpendataanGroup({ judul, field, sendValue, initialData }: Icdt) 
   }, [dlist, editingNama, field]);
 
   // Kirim data ke parent setiap ada perubahan
-  useEffect(() => {
+  useEffect(() => {     
     sendValue(dlist);
     if (!nextField) {
       setShowDropdown(false);
@@ -220,7 +220,7 @@ export function SpendataanGroup({ judul, field, sendValue, initialData }: Icdt) 
     setDlist(updated);
     setShowDropdown(true);
   };
-
+  
   return (
     <div className="text-sm text-gray-600 relative">
       <FormItem>
@@ -275,7 +275,8 @@ export function SpendataanGroup({ judul, field, sendValue, initialData }: Icdt) 
                 onMouseDown={() => handleEdit(idx)}
               >
                 <div className="flex flex-col text-gray-700">
-                  <span className="font-semibold">{item.nama}</span>
+                  {/* {JSON.stringify(item)} */}
+                  <span className="font-semibold"> {item.nama}</span>
                   <span className="text-[11px] text-gray-600">{item.value}</span>
                 </div>
                 <button

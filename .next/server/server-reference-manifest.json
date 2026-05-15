@@ -2,565 +2,285 @@
   "node": {
     "4075822443469385d11b0ca0258e3a90a893f3d612": {
       "workers": {
-        "app/(admin)/auth/page": {
-          "moduleId": "79537",
-          "async": false,
-          "exportedName": "authLogin",
-          "filename": "src/lib/actions/api.ts"
-        },
         "app/(admin)/dashboard/page": {
-          "moduleId": "2648",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogin",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/form/page": {
-          "moduleId": "80804",
-          "async": false,
-          "exportedName": "authLogin",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/jenis/page": {
-          "moduleId": "98859",
-          "async": false,
-          "exportedName": "authLogin",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/klasifikasi/page": {
-          "moduleId": "99607",
-          "async": false,
-          "exportedName": "authLogin",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/page": {
-          "moduleId": "40750",
-          "async": false,
-          "exportedName": "authLogin",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/add/page": {
-          "moduleId": "20130",
-          "async": false,
-          "exportedName": "authLogin",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/autoForm/[id]/page": {
-          "moduleId": "60881",
-          "async": false,
-          "exportedName": "authLogin",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/edit/[id]/page": {
-          "moduleId": "50171",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/form/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogin",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/pendataan/page": {
-          "moduleId": "23200",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/pendataan/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogin",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/sumber/page": {
-          "moduleId": "87197",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/sumber/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogin",
           "filename": "src/lib/actions/api.ts"
         },
         "app/_not-found/page": {
-          "moduleId": "47367",
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogin",
           "filename": "src/lib/actions/api.ts"
         },
         "app/login/page": {
-          "moduleId": "95883",
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogin",
           "filename": "src/lib/actions/api.ts"
         },
         "app/page": {
-          "moduleId": "78024",
-          "async": false,
-          "exportedName": "authLogin",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/register/page": {
-          "moduleId": "48765",
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogin",
           "filename": "src/lib/actions/api.ts"
         }
       },
       "layer": {
-        "app/(admin)/auth/page": "action-browser",
         "app/(admin)/dashboard/page": "action-browser",
         "app/(admin)/form/page": "action-browser",
-        "app/(admin)/jenis/page": "action-browser",
-        "app/(admin)/klasifikasi/page": "action-browser",
-        "app/(admin)/page": "action-browser",
-        "app/(admin)/pendataan/add/page": "action-browser",
-        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
-        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
         "app/(admin)/pendataan/page": "action-browser",
         "app/(admin)/sumber/page": "action-browser",
         "app/_not-found/page": "action-browser",
         "app/login/page": "action-browser",
-        "app/page": "action-browser",
-        "app/register/page": "action-browser"
+        "app/page": "action-browser"
       },
       "filename": "src/lib/actions/api.ts",
       "exportedName": "authLogin"
     },
     "40b8d627afd5136d9fa5f98dc85b621b461035e615": {
       "workers": {
-        "app/(admin)/auth/page": {
-          "moduleId": "79537",
-          "async": false,
-          "exportedName": "authRegister",
-          "filename": "src/lib/actions/api.ts"
-        },
         "app/(admin)/dashboard/page": {
-          "moduleId": "2648",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRegister",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/form/page": {
-          "moduleId": "80804",
-          "async": false,
-          "exportedName": "authRegister",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/jenis/page": {
-          "moduleId": "98859",
-          "async": false,
-          "exportedName": "authRegister",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/klasifikasi/page": {
-          "moduleId": "99607",
-          "async": false,
-          "exportedName": "authRegister",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/page": {
-          "moduleId": "40750",
-          "async": false,
-          "exportedName": "authRegister",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/add/page": {
-          "moduleId": "20130",
-          "async": false,
-          "exportedName": "authRegister",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/autoForm/[id]/page": {
-          "moduleId": "60881",
-          "async": false,
-          "exportedName": "authRegister",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/edit/[id]/page": {
-          "moduleId": "50171",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/form/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRegister",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/pendataan/page": {
-          "moduleId": "23200",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/pendataan/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRegister",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/sumber/page": {
-          "moduleId": "87197",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/sumber/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRegister",
           "filename": "src/lib/actions/api.ts"
         },
         "app/_not-found/page": {
-          "moduleId": "47367",
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRegister",
           "filename": "src/lib/actions/api.ts"
         },
         "app/login/page": {
-          "moduleId": "95883",
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRegister",
           "filename": "src/lib/actions/api.ts"
         },
         "app/page": {
-          "moduleId": "78024",
-          "async": false,
-          "exportedName": "authRegister",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/register/page": {
-          "moduleId": "48765",
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRegister",
           "filename": "src/lib/actions/api.ts"
         }
       },
       "layer": {
-        "app/(admin)/auth/page": "action-browser",
         "app/(admin)/dashboard/page": "action-browser",
         "app/(admin)/form/page": "action-browser",
-        "app/(admin)/jenis/page": "action-browser",
-        "app/(admin)/klasifikasi/page": "action-browser",
-        "app/(admin)/page": "action-browser",
-        "app/(admin)/pendataan/add/page": "action-browser",
-        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
-        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
         "app/(admin)/pendataan/page": "action-browser",
         "app/(admin)/sumber/page": "action-browser",
         "app/_not-found/page": "action-browser",
         "app/login/page": "action-browser",
-        "app/page": "action-browser",
-        "app/register/page": "action-browser"
+        "app/page": "action-browser"
       },
       "filename": "src/lib/actions/api.ts",
       "exportedName": "authRegister"
     },
     "40f973fd6ed43581b4a84a8cb463a69733e2685e74": {
       "workers": {
-        "app/(admin)/auth/page": {
-          "moduleId": "79537",
-          "async": false,
-          "exportedName": "authVerifyToken",
-          "filename": "src/lib/actions/api.ts"
-        },
         "app/(admin)/dashboard/page": {
-          "moduleId": "2648",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authVerifyToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/form/page": {
-          "moduleId": "80804",
-          "async": false,
-          "exportedName": "authVerifyToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/jenis/page": {
-          "moduleId": "98859",
-          "async": false,
-          "exportedName": "authVerifyToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/klasifikasi/page": {
-          "moduleId": "99607",
-          "async": false,
-          "exportedName": "authVerifyToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/page": {
-          "moduleId": "40750",
-          "async": false,
-          "exportedName": "authVerifyToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/add/page": {
-          "moduleId": "20130",
-          "async": false,
-          "exportedName": "authVerifyToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/autoForm/[id]/page": {
-          "moduleId": "60881",
-          "async": false,
-          "exportedName": "authVerifyToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/edit/[id]/page": {
-          "moduleId": "50171",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/form/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authVerifyToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/pendataan/page": {
-          "moduleId": "23200",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/pendataan/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authVerifyToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/sumber/page": {
-          "moduleId": "87197",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/sumber/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authVerifyToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/_not-found/page": {
-          "moduleId": "47367",
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authVerifyToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/login/page": {
-          "moduleId": "95883",
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authVerifyToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/page": {
-          "moduleId": "78024",
-          "async": false,
-          "exportedName": "authVerifyToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/register/page": {
-          "moduleId": "48765",
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authVerifyToken",
           "filename": "src/lib/actions/api.ts"
         }
       },
       "layer": {
-        "app/(admin)/auth/page": "action-browser",
         "app/(admin)/dashboard/page": "action-browser",
         "app/(admin)/form/page": "action-browser",
-        "app/(admin)/jenis/page": "action-browser",
-        "app/(admin)/klasifikasi/page": "action-browser",
-        "app/(admin)/page": "action-browser",
-        "app/(admin)/pendataan/add/page": "action-browser",
-        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
-        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
         "app/(admin)/pendataan/page": "action-browser",
         "app/(admin)/sumber/page": "action-browser",
         "app/_not-found/page": "action-browser",
         "app/login/page": "action-browser",
-        "app/page": "action-browser",
-        "app/register/page": "action-browser"
+        "app/page": "action-browser"
       },
       "filename": "src/lib/actions/api.ts",
       "exportedName": "authVerifyToken"
     },
     "404ecb86088c77ac44203afef22473936ad7203a8b": {
       "workers": {
-        "app/(admin)/auth/page": {
-          "moduleId": "79537",
-          "async": false,
-          "exportedName": "authLogout",
-          "filename": "src/lib/actions/api.ts"
-        },
         "app/(admin)/dashboard/page": {
-          "moduleId": "2648",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogout",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/form/page": {
-          "moduleId": "80804",
-          "async": false,
-          "exportedName": "authLogout",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/jenis/page": {
-          "moduleId": "98859",
-          "async": false,
-          "exportedName": "authLogout",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/klasifikasi/page": {
-          "moduleId": "99607",
-          "async": false,
-          "exportedName": "authLogout",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/page": {
-          "moduleId": "40750",
-          "async": false,
-          "exportedName": "authLogout",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/add/page": {
-          "moduleId": "20130",
-          "async": false,
-          "exportedName": "authLogout",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/autoForm/[id]/page": {
-          "moduleId": "60881",
-          "async": false,
-          "exportedName": "authLogout",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/edit/[id]/page": {
-          "moduleId": "50171",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/form/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogout",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/pendataan/page": {
-          "moduleId": "23200",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/pendataan/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogout",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/sumber/page": {
-          "moduleId": "87197",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/sumber/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogout",
           "filename": "src/lib/actions/api.ts"
         },
         "app/_not-found/page": {
-          "moduleId": "47367",
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogout",
           "filename": "src/lib/actions/api.ts"
         },
         "app/login/page": {
-          "moduleId": "95883",
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogout",
           "filename": "src/lib/actions/api.ts"
         },
         "app/page": {
-          "moduleId": "78024",
-          "async": false,
-          "exportedName": "authLogout",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/register/page": {
-          "moduleId": "48765",
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogout",
           "filename": "src/lib/actions/api.ts"
         }
       },
       "layer": {
-        "app/(admin)/auth/page": "action-browser",
         "app/(admin)/dashboard/page": "action-browser",
         "app/(admin)/form/page": "action-browser",
-        "app/(admin)/jenis/page": "action-browser",
-        "app/(admin)/klasifikasi/page": "action-browser",
-        "app/(admin)/page": "action-browser",
-        "app/(admin)/pendataan/add/page": "action-browser",
-        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
-        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
         "app/(admin)/pendataan/page": "action-browser",
         "app/(admin)/sumber/page": "action-browser",
         "app/_not-found/page": "action-browser",
         "app/login/page": "action-browser",
-        "app/page": "action-browser",
-        "app/register/page": "action-browser"
+        "app/page": "action-browser"
       },
       "filename": "src/lib/actions/api.ts",
       "exportedName": "authLogout"
     },
     "40cc2febf9f841004faf5a5c9cf7b848fa66e43a5e": {
       "workers": {
-        "app/(admin)/auth/page": {
-          "moduleId": "79537",
-          "async": false,
-          "exportedName": "authRefreshToken",
-          "filename": "src/lib/actions/api.ts"
-        },
         "app/(admin)/dashboard/page": {
-          "moduleId": "2648",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRefreshToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/form/page": {
-          "moduleId": "80804",
-          "async": false,
-          "exportedName": "authRefreshToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/jenis/page": {
-          "moduleId": "98859",
-          "async": false,
-          "exportedName": "authRefreshToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/klasifikasi/page": {
-          "moduleId": "99607",
-          "async": false,
-          "exportedName": "authRefreshToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/page": {
-          "moduleId": "40750",
-          "async": false,
-          "exportedName": "authRefreshToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/add/page": {
-          "moduleId": "20130",
-          "async": false,
-          "exportedName": "authRefreshToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/autoForm/[id]/page": {
-          "moduleId": "60881",
-          "async": false,
-          "exportedName": "authRefreshToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/edit/[id]/page": {
-          "moduleId": "50171",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/form/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRefreshToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/pendataan/page": {
-          "moduleId": "23200",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/pendataan/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRefreshToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/sumber/page": {
-          "moduleId": "87197",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/sumber/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRefreshToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/_not-found/page": {
-          "moduleId": "47367",
+          "moduleId": "[project]/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRefreshToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/login/page": {
-          "moduleId": "95883",
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRefreshToken",
           "filename": "src/lib/actions/api.ts"
         },
         "app/page": {
-          "moduleId": "78024",
-          "async": false,
-          "exportedName": "authRefreshToken",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/register/page": {
-          "moduleId": "48765",
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRefreshToken",
           "filename": "src/lib/actions/api.ts"
         }
       },
       "layer": {
-        "app/(admin)/auth/page": "action-browser",
         "app/(admin)/dashboard/page": "action-browser",
         "app/(admin)/form/page": "action-browser",
-        "app/(admin)/jenis/page": "action-browser",
-        "app/(admin)/klasifikasi/page": "action-browser",
-        "app/(admin)/page": "action-browser",
-        "app/(admin)/pendataan/add/page": "action-browser",
-        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
-        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
         "app/(admin)/pendataan/page": "action-browser",
         "app/(admin)/sumber/page": "action-browser",
         "app/_not-found/page": "action-browser",
         "app/login/page": "action-browser",
-        "app/page": "action-browser",
-        "app/register/page": "action-browser"
+        "app/page": "action-browser"
       },
       "filename": "src/lib/actions/api.ts",
       "exportedName": "authRefreshToken"
@@ -568,67 +288,31 @@
     "60a27850147d65f46b1c117fe66c17be1de32a2218": {
       "workers": {
         "app/(admin)/dashboard/page": {
-          "moduleId": "2648",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "fetchData",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/form/page": {
-          "moduleId": "80804",
-          "async": false,
-          "exportedName": "fetchData",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/jenis/page": {
-          "moduleId": "98859",
-          "async": false,
-          "exportedName": "fetchData",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/klasifikasi/page": {
-          "moduleId": "99607",
-          "async": false,
-          "exportedName": "fetchData",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/add/page": {
-          "moduleId": "20130",
-          "async": false,
-          "exportedName": "fetchData",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/autoForm/[id]/page": {
-          "moduleId": "60881",
-          "async": false,
-          "exportedName": "fetchData",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/edit/[id]/page": {
-          "moduleId": "50171",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/form/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "fetchData",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/pendataan/page": {
-          "moduleId": "23200",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/pendataan/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "fetchData",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/sumber/page": {
-          "moduleId": "87197",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/sumber/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "fetchData",
           "filename": "src/lib/actions/api.ts"
         },
         "app/login/page": {
-          "moduleId": "95883",
-          "async": false,
-          "exportedName": "fetchData",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/register/page": {
-          "moduleId": "48765",
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "fetchData",
           "filename": "src/lib/actions/api.ts"
@@ -637,15 +321,9 @@
       "layer": {
         "app/(admin)/dashboard/page": "action-browser",
         "app/(admin)/form/page": "action-browser",
-        "app/(admin)/jenis/page": "action-browser",
-        "app/(admin)/klasifikasi/page": "action-browser",
-        "app/(admin)/pendataan/add/page": "action-browser",
-        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
-        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
         "app/(admin)/pendataan/page": "action-browser",
         "app/(admin)/sumber/page": "action-browser",
-        "app/login/page": "action-browser",
-        "app/register/page": "action-browser"
+        "app/login/page": "action-browser"
       },
       "filename": "src/lib/actions/api.ts",
       "exportedName": "fetchData"
@@ -653,67 +331,31 @@
     "70c00140b29d9cedb7c83d1c28cad61066a02dedd3": {
       "workers": {
         "app/(admin)/dashboard/page": {
-          "moduleId": "2648",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "createItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/form/page": {
-          "moduleId": "80804",
-          "async": false,
-          "exportedName": "createItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/jenis/page": {
-          "moduleId": "98859",
-          "async": false,
-          "exportedName": "createItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/klasifikasi/page": {
-          "moduleId": "99607",
-          "async": false,
-          "exportedName": "createItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/add/page": {
-          "moduleId": "20130",
-          "async": false,
-          "exportedName": "createItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/autoForm/[id]/page": {
-          "moduleId": "60881",
-          "async": false,
-          "exportedName": "createItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/edit/[id]/page": {
-          "moduleId": "50171",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/form/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "createItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/pendataan/page": {
-          "moduleId": "23200",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/pendataan/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "createItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/sumber/page": {
-          "moduleId": "87197",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/sumber/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "createItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/login/page": {
-          "moduleId": "95883",
-          "async": false,
-          "exportedName": "createItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/register/page": {
-          "moduleId": "48765",
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "createItem",
           "filename": "src/lib/actions/api.ts"
@@ -722,15 +364,9 @@
       "layer": {
         "app/(admin)/dashboard/page": "action-browser",
         "app/(admin)/form/page": "action-browser",
-        "app/(admin)/jenis/page": "action-browser",
-        "app/(admin)/klasifikasi/page": "action-browser",
-        "app/(admin)/pendataan/add/page": "action-browser",
-        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
-        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
         "app/(admin)/pendataan/page": "action-browser",
         "app/(admin)/sumber/page": "action-browser",
-        "app/login/page": "action-browser",
-        "app/register/page": "action-browser"
+        "app/login/page": "action-browser"
       },
       "filename": "src/lib/actions/api.ts",
       "exportedName": "createItem"
@@ -738,67 +374,31 @@
     "78991ca0f3033dff8fcff53a246f83654835f3eec6": {
       "workers": {
         "app/(admin)/dashboard/page": {
-          "moduleId": "2648",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "updateItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/form/page": {
-          "moduleId": "80804",
-          "async": false,
-          "exportedName": "updateItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/jenis/page": {
-          "moduleId": "98859",
-          "async": false,
-          "exportedName": "updateItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/klasifikasi/page": {
-          "moduleId": "99607",
-          "async": false,
-          "exportedName": "updateItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/add/page": {
-          "moduleId": "20130",
-          "async": false,
-          "exportedName": "updateItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/autoForm/[id]/page": {
-          "moduleId": "60881",
-          "async": false,
-          "exportedName": "updateItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/edit/[id]/page": {
-          "moduleId": "50171",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/form/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "updateItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/pendataan/page": {
-          "moduleId": "23200",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/pendataan/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "updateItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/sumber/page": {
-          "moduleId": "87197",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/sumber/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "updateItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/login/page": {
-          "moduleId": "95883",
-          "async": false,
-          "exportedName": "updateItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/register/page": {
-          "moduleId": "48765",
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "updateItem",
           "filename": "src/lib/actions/api.ts"
@@ -807,15 +407,9 @@
       "layer": {
         "app/(admin)/dashboard/page": "action-browser",
         "app/(admin)/form/page": "action-browser",
-        "app/(admin)/jenis/page": "action-browser",
-        "app/(admin)/klasifikasi/page": "action-browser",
-        "app/(admin)/pendataan/add/page": "action-browser",
-        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
-        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
         "app/(admin)/pendataan/page": "action-browser",
         "app/(admin)/sumber/page": "action-browser",
-        "app/login/page": "action-browser",
-        "app/register/page": "action-browser"
+        "app/login/page": "action-browser"
       },
       "filename": "src/lib/actions/api.ts",
       "exportedName": "updateItem"
@@ -823,67 +417,31 @@
     "70fb915d1c0af0d7f4c786fa0c51f8e0e484f04831": {
       "workers": {
         "app/(admin)/dashboard/page": {
-          "moduleId": "2648",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "deleteItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/form/page": {
-          "moduleId": "80804",
-          "async": false,
-          "exportedName": "deleteItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/jenis/page": {
-          "moduleId": "98859",
-          "async": false,
-          "exportedName": "deleteItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/klasifikasi/page": {
-          "moduleId": "99607",
-          "async": false,
-          "exportedName": "deleteItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/add/page": {
-          "moduleId": "20130",
-          "async": false,
-          "exportedName": "deleteItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/autoForm/[id]/page": {
-          "moduleId": "60881",
-          "async": false,
-          "exportedName": "deleteItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/(admin)/pendataan/edit/[id]/page": {
-          "moduleId": "50171",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/form/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "deleteItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/pendataan/page": {
-          "moduleId": "23200",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/pendataan/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "deleteItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/(admin)/sumber/page": {
-          "moduleId": "87197",
+          "moduleId": "[project]/.next-internal/server/app/(admin)/sumber/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "deleteItem",
           "filename": "src/lib/actions/api.ts"
         },
         "app/login/page": {
-          "moduleId": "95883",
-          "async": false,
-          "exportedName": "deleteItem",
-          "filename": "src/lib/actions/api.ts"
-        },
-        "app/register/page": {
-          "moduleId": "48765",
+          "moduleId": "[project]/.next-internal/server/app/login/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "deleteItem",
           "filename": "src/lib/actions/api.ts"
@@ -892,15 +450,9 @@
       "layer": {
         "app/(admin)/dashboard/page": "action-browser",
         "app/(admin)/form/page": "action-browser",
-        "app/(admin)/jenis/page": "action-browser",
-        "app/(admin)/klasifikasi/page": "action-browser",
-        "app/(admin)/pendataan/add/page": "action-browser",
-        "app/(admin)/pendataan/autoForm/[id]/page": "action-browser",
-        "app/(admin)/pendataan/edit/[id]/page": "action-browser",
         "app/(admin)/pendataan/page": "action-browser",
         "app/(admin)/sumber/page": "action-browser",
-        "app/login/page": "action-browser",
-        "app/register/page": "action-browser"
+        "app/login/page": "action-browser"
       },
       "filename": "src/lib/actions/api.ts",
       "exportedName": "deleteItem"

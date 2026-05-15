@@ -73,7 +73,7 @@ export default function Home() {
           <div className="lg:w-1/2 relative">
             <div className="relative mx-auto lg:mx-0">
                 <img
-                  src="/info.png"
+                  src="/sop.png"
                   alt="AcodeMaster"
                   className="w-full h-full object-cover"
                 />

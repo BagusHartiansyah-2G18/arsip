@@ -2,11 +2,13 @@ npx prisma init
 npx prisma generate
 npx prisma migrate dev --name nama_migrasi
 npx prisma migrate dev --name init
+npx prisma migrate dev --name add-cuti-tt
 
 npx prisma validate
 
 npx prisma studio
-
+npx prisma db push
+npx prisma db seed
 npm run seed
 
  npx prisma migrate reset

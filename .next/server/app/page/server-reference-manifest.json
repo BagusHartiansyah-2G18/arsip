@@ -3,7 +3,7 @@
     "4075822443469385d11b0ca0258e3a90a893f3d612": {
       "workers": {
         "app/page": {
-          "moduleId": "78024",
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogin",
           "filename": "src/lib/actions/api.ts"
@@ -18,7 +18,7 @@
     "40b8d627afd5136d9fa5f98dc85b621b461035e615": {
       "workers": {
         "app/page": {
-          "moduleId": "78024",
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRegister",
           "filename": "src/lib/actions/api.ts"
@@ -33,7 +33,7 @@
     "40f973fd6ed43581b4a84a8cb463a69733e2685e74": {
       "workers": {
         "app/page": {
-          "moduleId": "78024",
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authVerifyToken",
           "filename": "src/lib/actions/api.ts"
@@ -48,7 +48,7 @@
     "404ecb86088c77ac44203afef22473936ad7203a8b": {
       "workers": {
         "app/page": {
-          "moduleId": "78024",
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authLogout",
           "filename": "src/lib/actions/api.ts"
@@ -63,7 +63,7 @@
     "40cc2febf9f841004faf5a5c9cf7b848fa66e43a5e": {
       "workers": {
         "app/page": {
-          "moduleId": "78024",
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "authRefreshToken",
           "filename": "src/lib/actions/api.ts"

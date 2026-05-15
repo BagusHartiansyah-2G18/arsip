@@ -41,6 +41,7 @@ export default function AddCategoryPage() {
         uraian: '',
         uraianPoint: '',
         uraianPointC: 0,
+        edit:false,
         tgl: '',
         docStatus: '',
         docC: '',
@@ -57,7 +58,10 @@ export default function AddCategoryPage() {
     useEffect(() => {
         const fetchData = async () => {
             const saved = await __duser("formAddArsip") as IPendataanForm;
-            _local({ next: true, dt: saved||defaultDT });
+            if(saved.edit){
+                _local({ next: true, dt: saved});
+            }
+            _local({ next: true, dt: defaultDT });
         };
         fetchData();
     }, []);
@@ -98,6 +102,7 @@ export default function AddCategoryPage() {
         file: string;
         idBidang: string;
         kategori: string;
+        edit:boolean,
         jenis: string;
         rentang: string;
         retensi: string;

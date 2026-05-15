@@ -59,6 +59,7 @@ export interface IPendataanForm {
   retensi: string;
   keterangan: string; // jika ini array, ubah ke string[]
   uraian: string;
+  edit:boolean;
   uraianPoint: string; // jika ini array of object, ubah ke IuraianPoint[]
   uraianPointC: number | string; // tergantung tipe aslinya
   tgl: string | Date; // jika sudah diparse ke Date, ubah ke Date

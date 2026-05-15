@@ -1,0 +1,27 @@
+alur sistem SI ARSIP:
+1. login
+    1.1 check auth
+    1.2 get role (bidang,admin)
+2. dashboard, informasi total dokument dan data perbidang
+3. pendataan arsip
+4. sumber data
+5. form tambahan
+
+
+pengaturan google drive [sekretariat]:
+1. folder Arsip, didalamnya ada folder bidang2 Bidang Ketersediaan dan Kerawanan Pangan, Bidang Konsumsi dan Keamanan Pangan dan Bidang Distribusi dan Cadangan Pangan
+2. setiap akun bidang diberikan akses folder sesuai dengan bidangnya
+3. disitulah bidang menyimpan arsipnya
+
+
+
+
+sop arsip dokument:
+1. dokument cetak
+    1.1 tentukan lokasi penyimpanannya di lemari dan nomor raknya
+2. file pdf, word, ppt dll
+    2.1 dikomputer / laptop
+        2.1.1 tentukan lokasi penyimpanannya contoh C:\Users\2G18\arsip\keuangan\file.pdf 
+    2.2 upload google drive
+        2.2.1 menyesuaikan dengan folder yang telah diberikan 
+3. data2 tersebut yang disimpan di SI Arsip

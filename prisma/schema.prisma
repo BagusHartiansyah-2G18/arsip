@@ -6,7 +6,8 @@ generator client {
 datasource db {
   provider = "mysql"
   // url ="mysql://bpkadksb_2g18:}}s%n65M0vGvSwvZ@localhost/bpkadksb_arsip"
-  url =env("DATABASE_URL")
+  // url =env("DATABASE_URL")
+  url ="mysql://root:@localhost:3306/arsip"
 }
 
 model User {

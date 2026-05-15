@@ -48,11 +48,13 @@ export default function AddCategoryPage() {
     const [local, _local] = useState<{next: boolean;  dt: IPendataanForm;}>({ next: false, dt:defaultDT,}); 
 
     if(!local.next  && data.length>0){
-        
-        _local({next:true,dt:data.map(v=>({
+        const savedLog = {next:true,dt:data.map(v=>({
             ...v,
             tgl:new Date(String(v.tgl).replace(/"/g, ''))
-        }))[0]})
+        }))[0]};
+        // console.log(savedLog);
+        
+        _local(savedLog)
     }
 
     const handleSubmit = async (data: {
@@ -133,7 +135,7 @@ export default function AddCategoryPage() {
                     onCancel={handleCancel}
                     isLoading={loading}
                     initialData={local.dt}
-                    submitButtonText="Simpan Pendataan"
+                    submitButtonText="Simpan Perubahan"
                 />
             }
         </div>

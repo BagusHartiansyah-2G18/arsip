@@ -70,12 +70,12 @@ export function CFpendataan({
     onSubmit,
     onCancel,
     isLoading = false,
-    submitButtonText = 'Simpan Kategori'
+    submitButtonText = 'Simpan Pendataan'
     
 }: CategoryDestinationFormProps) {    
 
     const { data } = useApi<Ibidang>(API_ROUTES.arsip.bidang);  
-        
+    
     const form = useForm<Iform>({
         resolver: zodResolver(formSchema),
         defaultValues: { 
@@ -129,8 +129,11 @@ export function CFpendataan({
     }, [uraianPoint, form]);
 
     useEffect(() => {
-    const subscription = form.watch((value) => { 
-        _duser(value, "formAddArsip"); // simpan ke localStorage
+    const subscription = form.watch((value) => {  
+        _duser({
+            ...value, 
+            ...(submitButtonText.split("ubah").length==2? {edit:true}:{edit:false})
+        }, "formAddArsip"); // simpan ke localStorage
     });
 
     return () => subscription.unsubscribe();
@@ -148,6 +151,7 @@ export function CFpendataan({
 
     //     return () => subscription.unsubscribe();
     // }, [form]);
+    // console.log(form.getValues());
     
     return (
         
@@ -241,7 +245,13 @@ export function CFpendataan({
                                         control={form.control}
                                         name="rentang"
                                         render={({ field }) => {
-                                            
+                                            // const kolom = [{"Dari Tahun":""},{"Hingga Tahun":""}];
+                                            // let data = kolom;
+                                            // if(field.value!=''){
+                                            //     data = JSON.parse(field.value);
+                                            // }
+                                            // const initial = data;   
+
                                             const data=JSON.parse(field.value || '[]'); 
                                             const kolom = [{"Dari Tahun":""},{"Hingga Tahun":""}];
                                             const initial = data ? data :kolom;   
@@ -250,6 +260,9 @@ export function CFpendataan({
                                             //     (val: Array<Record<string, string>>) => field.onChange(JSON.stringify(val.length === 0 ? [] : val)),
                                             //     [field]
                                             // );
+
+                                            // console.log(data,kolom,initial);
+                                            
                                             interface IcdtItem {
                                                 nama: string;
                                                 value: string;
@@ -257,9 +270,15 @@ export function CFpendataan({
                                             }
                                             const handleSendValue = React.useCallback(
                                                 (val: IcdtItem[]) => {
+                                                    // console.log("Bagus H",val);
+                                                    
                                                     // Convert IcdtItem[] ke Record<string,string>[] (hanya nama dan value)
-                                                    const converted: Record<string, string>[] = val.map(item => ({ [item.nama]: item.value }));
-                                                    field.onChange(JSON.stringify(converted.length === 0 ? [] : converted));
+                                                    // const converted = Object.assign({}, ...val);
+
+                                                    
+                                                    //v1
+                                                    // const converted: Record<string, string>[] = val.map(item => ({ [item.nama]: item.value }));
+                                                    field.onChange(JSON.stringify(val.length === 0 ? [] : val));
                                                 },
                                                 [field]
                                             );
