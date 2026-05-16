@@ -1,0 +1,19 @@
+DATABASE_URL="mysql://bpkadksb_2g18:}}s%n65M0vGvSwvZ@localhost/bpkadksb_arsipdkp"
+# DATABASE_URL="mysql://root:@localhost:3306/arsip"
+
+NODE_ENV="production"
+NEXTAUTH_SECRET="OnXPkQzh9xy3a6SS8RAO4F0PbmwvXKTM3HZLD0wZrlI="
+JWT_SECRET="2g18@mantap"
+PORT=8080
+# NEXT_PUBLIC_SITE_URL="https://siarsip.bpkad-ksb.com"
+# cp -r .next/static .next/standalone/.next/static
+# mkdir -p .next/standalone/.next/static/media
+# cp -r .next/static .next/standalone/.next/static ini dia
+# cp -r .next/static/media .next/standalone/.next/static/media
+
+# cp -r .next/server/app .next/standalone/.next/server/app
+# cp -r .next/server/chunks .next/standalone/.next/server/chunks
+
+# NEXT_PUBLIC_SITE_URL="http://localhost:8080"
+NEXT_PUBLIC_SITE_URL="https://arsipdkp.kabsumbawabarat.com"
+# ini perlu disesuaikan

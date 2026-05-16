@@ -7,7 +7,7 @@
 //   },
 //   engine: "classic",
 //   datasource: {
-//     url: env("DATABASE_URL"),
+//     url: env("DATABASE_URL") || "mysql://root:@localhost:3306/arsip",
 //   },
 // });
 
@@ -23,6 +23,6 @@ export default defineConfig({
   },
   engine: "classic",
   datasource: {
-    url: "mysql://root:@localhost:3306/arsip"!,
+    url: "mysql://bpkadksb_2g18:}}s%n65M0vGvSwvZ@localhost/bpkadksb_arsip"!,
   },
 });

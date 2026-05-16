@@ -2,12 +2,10 @@ generator client {
   provider      = "prisma-client-js"
   binaryTargets = ["native", "debian-openssl-1.1.x", "windows"]
 }
-
 datasource db {
   provider = "mysql"
-  url ="mysql://bpkadksb_2g18:}}s%n65M0vGvSwvZ@localhost/bpkadksb_arsipdkp"
-  // url =env("DATABASE_URL")
-  // url ="mysql://root:@localhost:3306/arsip"
+  // url ="mysql://bpkadksb_2g18:}}s%n65M0vGvSwvZ@localhost/bpkadksb_arsip"
+  url ="mysql://bpkadksb_2g18:}}s%n65M0vGvSwvZ@localhost/bpkadksb_arsip"
 }
 
 model User {
