@@ -10,7 +10,7 @@ export function getBaseUrl(): string {
   }
 
   // 👉 Server-side (SSR / API / Standalone)
-  return process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:8080";
+  return process.env.NEXT_PUBLIC_SITE_URL || "https://arsipdkp.kabsumbawabarat.com";
 }
 
 export const API_BASE_URL = getBaseUrl();
