@@ -1,14 +1,16 @@
 {
   "/(admin)/dashboard/page": "app/(admin)/dashboard/page.js",
   "/(admin)/form/page": "app/(admin)/form/page.js",
+  "/(admin)/pendataan/add/page": "app/(admin)/pendataan/add/page.js",
   "/(admin)/pendataan/page": "app/(admin)/pendataan/page.js",
   "/(admin)/sumber/page": "app/(admin)/sumber/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/api/(arsip)/analisis/form/route": "app/api/(arsip)/analisis/form/route.js",
   "/api/(arsip)/analisis/sumber/route": "app/api/(arsip)/analisis/sumber/route.js",
   "/api/(arsip)/pendataan/route": "app/api/(arsip)/pendataan/route.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/bidang/route": "app/api/bidang/route.js",
   "/api/dashboard/route": "app/api/dashboard/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/login/page": "app/login/page.js",
-  "/page": "app/page.js"
+  "/login/page": "app/login/page.js"
 }

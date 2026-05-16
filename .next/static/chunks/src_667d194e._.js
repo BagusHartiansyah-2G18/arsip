@@ -2292,10 +2292,13 @@ function SpendataanGroup(param) {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "font-semibold",
-                                            children: item.nama
-                                        }, void 0, false, {
+                                            children: [
+                                                " ",
+                                                item.nama
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/components/support/SpendataanGroup.tsx",
-                                            lineNumber: 278,
+                                            lineNumber: 279,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2303,7 +2306,7 @@ function SpendataanGroup(param) {
                                             children: item.value
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/support/SpendataanGroup.tsx",
-                                            lineNumber: 279,
+                                            lineNumber: 280,
                                             columnNumber: 19
                                         }, this)
                                     ]
@@ -2322,7 +2325,7 @@ function SpendataanGroup(param) {
                                     children: "Hapus"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/support/SpendataanGroup.tsx",
-                                    lineNumber: 281,
+                                    lineNumber: 282,
                                     columnNumber: 17
                                 }, this)
                             ]
@@ -3162,6 +3165,12 @@ function CFpendataan(param) {
                                                 render: _s1((param)=>{
                                                     let { field } = param;
                                                     _s1();
+                                                    // const kolom = [{"Dari Tahun":""},{"Hingga Tahun":""}];
+                                                    // let data = kolom;
+                                                    // if(field.value!=''){
+                                                    //     data = JSON.parse(field.value);
+                                                    // }
+                                                    // const initial = data;   
                                                     const data = JSON.parse(field.value || '[]');
                                                     const kolom = [
                                                         {
@@ -3174,31 +3183,12 @@ function CFpendataan(param) {
                                                     const initial = data ? data : kolom;
                                                     const handleSendValue = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useCallback({
                                                         "CFpendataan.useCallback[handleSendValue]": (val)=>{
+                                                            // console.log("Bagus H",val);
                                                             // Convert IcdtItem[] ke Record<string,string>[] (hanya nama dan value)
                                                             // const converted = Object.assign({}, ...val);
                                                             //v1
                                                             // const converted: Record<string, string>[] = val.map(item => ({ [item.nama]: item.value }));
-                                                            // field.onChange(JSON.stringify(converted.length === 0 ? [] : converted));
-                                                            // console.log(val,JSON.stringify(converted.length === 0 ? [] : converted));
-                                                            const normalized = val.map({
-                                                                "CFpendataan.useCallback[handleSendValue].normalized": (item)=>{
-                                                                    var _Object_entries_;
-                                                                    const [nama, value] = (_Object_entries_ = Object.entries(item)[0]) !== null && _Object_entries_ !== void 0 ? _Object_entries_ : [
-                                                                        "",
-                                                                        ""
-                                                                    ];
-                                                                    return {
-                                                                        nama,
-                                                                        value
-                                                                    };
-                                                                }
-                                                            }["CFpendataan.useCallback[handleSendValue].normalized"]);
-                                                            const converted = normalized.map({
-                                                                "CFpendataan.useCallback[handleSendValue].converted": (item)=>({
-                                                                        [item.nama]: item.value
-                                                                    })
-                                                            }["CFpendataan.useCallback[handleSendValue].converted"]);
-                                                            field.onChange(JSON.stringify(normalized.length === 0 ? [] : converted));
+                                                            field.onChange(JSON.stringify(val.length === 0 ? [] : val));
                                                         }
                                                     }["CFpendataan.useCallback[handleSendValue]"], [
                                                         field
@@ -3213,20 +3203,20 @@ function CFpendataan(param) {
                                                                 sendValue: handleSendValue
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 292,
+                                                                lineNumber: 288,
                                                                 columnNumber: 53
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormMessage"], {
                                                                 className: "text-xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 297,
+                                                                lineNumber: 293,
                                                                 columnNumber: 53
                                                             }, void 0)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                        lineNumber: 291,
+                                                        lineNumber: 287,
                                                         columnNumber: 49
                                                     }, void 0);
                                                 }, "R2XYk+W5M9Ocs/gAMpnc9ChGQOc=")
@@ -3260,26 +3250,26 @@ function CFpendataan(param) {
                                                                 sendValue: (val)=>field.onChange(JSON.stringify(val.length == 0 ? [] : val))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 312,
+                                                                lineNumber: 308,
                                                                 columnNumber: 53
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormMessage"], {
                                                                 className: "text-xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 317,
+                                                                lineNumber: 313,
                                                                 columnNumber: 53
                                                             }, void 0)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                        lineNumber: 311,
+                                                        lineNumber: 307,
                                                         columnNumber: 49
                                                     }, void 0);
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                lineNumber: 302,
+                                                lineNumber: 298,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormField"], {
@@ -3295,13 +3285,13 @@ function CFpendataan(param) {
                                                         error: (_fieldState_error = fieldState.error) === null || _fieldState_error === void 0 ? void 0 : _fieldState_error.message
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                        lineNumber: 326,
+                                                        lineNumber: 322,
                                                         columnNumber: 52
                                                     }, void 0);
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                lineNumber: 322,
+                                                lineNumber: 318,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormField"], {
@@ -3317,13 +3307,13 @@ function CFpendataan(param) {
                                                         error: (_fieldState_error = fieldState.error) === null || _fieldState_error === void 0 ? void 0 : _fieldState_error.message
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                        lineNumber: 337,
+                                                        lineNumber: 333,
                                                         columnNumber: 52
                                                     }, void 0);
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                lineNumber: 333,
+                                                lineNumber: 329,
                                                 columnNumber: 37
                                             }, this)
                                         ]
@@ -3360,14 +3350,14 @@ function CFpendataan(param) {
                                         className: "w-2 h-2 bg-emerald-500 rounded-full"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                        lineNumber: 352,
+                                        lineNumber: 348,
                                         columnNumber: 33
                                     }, this),
                                     "Daftar isi Berkas"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                lineNumber: 351,
+                                lineNumber: 347,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3388,7 +3378,7 @@ function CFpendataan(param) {
                                                                 children: "Uraian Data Arsip"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 363,
+                                                                lineNumber: 359,
                                                                 columnNumber: 49
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormControl"], {
@@ -3401,31 +3391,31 @@ function CFpendataan(param) {
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                    lineNumber: 367,
+                                                                    lineNumber: 363,
                                                                     columnNumber: 53
                                                                 }, void 0)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 366,
+                                                                lineNumber: 362,
                                                                 columnNumber: 49
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormMessage"], {
                                                                 className: "text-xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 376,
+                                                                lineNumber: 372,
                                                                 columnNumber: 49
                                                             }, void 0)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                        lineNumber: 362,
+                                                        lineNumber: 358,
                                                         columnNumber: 45
                                                     }, void 0);
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                lineNumber: 358,
+                                                lineNumber: 354,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormField"], {
@@ -3446,7 +3436,7 @@ function CFpendataan(param) {
                                                                         children: "Tanggal"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                        lineNumber: 386,
+                                                                        lineNumber: 382,
                                                                         columnNumber: 53
                                                                     }, void 0),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormControl"], {
@@ -3461,25 +3451,25 @@ function CFpendataan(param) {
                                                                             className: "text-sm w-full border-gray-200 rounded px-3 py-2 text-sm"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                            lineNumber: 390,
+                                                                            lineNumber: 386,
                                                                             columnNumber: 57
                                                                         }, void 0)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                        lineNumber: 389,
+                                                                        lineNumber: 385,
                                                                         columnNumber: 53
                                                                     }, void 0)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 385,
+                                                                lineNumber: 381,
                                                                 columnNumber: 49
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormMessage"], {
                                                                 className: "text-xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 416,
+                                                                lineNumber: 412,
                                                                 columnNumber: 49
                                                             }, void 0)
                                                         ]
@@ -3487,7 +3477,7 @@ function CFpendataan(param) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                lineNumber: 380,
+                                                lineNumber: 376,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormField"], {
@@ -3504,7 +3494,7 @@ function CFpendataan(param) {
                                                                 children: "Status Dokument"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 429,
+                                                                lineNumber: 425,
                                                                 columnNumber: 53
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormControl"], {
@@ -3516,31 +3506,31 @@ function CFpendataan(param) {
                                                                     onClear: ()=>field.onChange('')
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                    lineNumber: 433,
+                                                                    lineNumber: 429,
                                                                     columnNumber: 57
                                                                 }, void 0)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 432,
+                                                                lineNumber: 428,
                                                                 columnNumber: 53
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormMessage"], {
                                                                 className: "text-xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 441,
+                                                                lineNumber: 437,
                                                                 columnNumber: 53
                                                             }, void 0)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                        lineNumber: 428,
+                                                        lineNumber: 424,
                                                         columnNumber: 49
                                                     }, void 0);
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                lineNumber: 420,
+                                                lineNumber: 416,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormField"], {
@@ -3555,7 +3545,7 @@ function CFpendataan(param) {
                                                                 children: "Jumlah Dokument"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 451,
+                                                                lineNumber: 447,
                                                                 columnNumber: 49
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormControl"], {
@@ -3568,31 +3558,31 @@ function CFpendataan(param) {
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                    lineNumber: 455,
+                                                                    lineNumber: 451,
                                                                     columnNumber: 53
                                                                 }, void 0)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 454,
+                                                                lineNumber: 450,
                                                                 columnNumber: 49
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormMessage"], {
                                                                 className: "text-xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 464,
+                                                                lineNumber: 460,
                                                                 columnNumber: 49
                                                             }, void 0)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                        lineNumber: 450,
+                                                        lineNumber: 446,
                                                         columnNumber: 45
                                                     }, void 0);
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                lineNumber: 446,
+                                                lineNumber: 442,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormField"], {
@@ -3609,7 +3599,7 @@ function CFpendataan(param) {
                                                                 children: "Status Tingkatan Dokument"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 477,
+                                                                lineNumber: 473,
                                                                 columnNumber: 53
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormControl"], {
@@ -3621,37 +3611,37 @@ function CFpendataan(param) {
                                                                     onClear: ()=>field.onChange('')
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                    lineNumber: 481,
+                                                                    lineNumber: 477,
                                                                     columnNumber: 57
                                                                 }, void 0)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 480,
+                                                                lineNumber: 476,
                                                                 columnNumber: 53
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormMessage"], {
                                                                 className: "text-xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 489,
+                                                                lineNumber: 485,
                                                                 columnNumber: 53
                                                             }, void 0)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                        lineNumber: 476,
+                                                        lineNumber: 472,
                                                         columnNumber: 49
                                                     }, void 0);
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                lineNumber: 468,
+                                                lineNumber: 464,
                                                 columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                        lineNumber: 356,
+                                        lineNumber: 352,
                                         columnNumber: 33
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3670,13 +3660,13 @@ function CFpendataan(param) {
                                                         error: (_fieldState_error = fieldState.error) === null || _fieldState_error === void 0 ? void 0 : _fieldState_error.message
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                        lineNumber: 500,
+                                                        lineNumber: 496,
                                                         columnNumber: 52
                                                     }, void 0);
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                lineNumber: 496,
+                                                lineNumber: 492,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormField"], {
@@ -3725,7 +3715,7 @@ function CFpendataan(param) {
                                                                 children: "File Data & Informasi"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 527,
+                                                                lineNumber: 523,
                                                                 columnNumber: 53
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3741,7 +3731,7 @@ function CFpendataan(param) {
                                                                             }))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                        lineNumber: 531,
+                                                                        lineNumber: 527,
                                                                         columnNumber: 57
                                                                     }, void 0),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$support$2f$SpendataanGroup$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SpendataanGroup"], {
@@ -3754,7 +3744,7 @@ function CFpendataan(param) {
                                                                             }))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                        lineNumber: 535,
+                                                                        lineNumber: 531,
                                                                         columnNumber: 57
                                                                     }, void 0),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$support$2f$SpendataanGroup$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SpendataanGroup"], {
@@ -3767,55 +3757,55 @@ function CFpendataan(param) {
                                                                             }))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                        lineNumber: 539,
+                                                                        lineNumber: 535,
                                                                         columnNumber: 57
                                                                     }, void 0)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 530,
+                                                                lineNumber: 526,
                                                                 columnNumber: 53
                                                             }, void 0),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormMessage"], {
                                                                 className: "text-xs"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                                lineNumber: 544,
+                                                                lineNumber: 540,
                                                                 columnNumber: 53
                                                             }, void 0)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                        lineNumber: 526,
+                                                        lineNumber: 522,
                                                         columnNumber: 49
                                                     }, void 0));
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                                lineNumber: 508,
+                                                lineNumber: 504,
                                                 columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                        lineNumber: 495,
+                                        lineNumber: 491,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                                lineNumber: 355,
+                                lineNumber: 351,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                        lineNumber: 350,
+                        lineNumber: 346,
                         columnNumber: 25
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                    lineNumber: 349,
+                    lineNumber: 345,
                     columnNumber: 21
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$common$2f$FormActions$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormActions"], {
@@ -3824,7 +3814,7 @@ function CFpendataan(param) {
                     submitButtonText: submitButtonText
                 }, void 0, false, {
                     fileName: "[project]/src/features/pendataan/components/pendataanForm.tsx",
-                    lineNumber: 557,
+                    lineNumber: 553,
                     columnNumber: 21
                 }, this)
             ]
