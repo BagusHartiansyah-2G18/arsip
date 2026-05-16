@@ -41,6 +41,7 @@ export default function AddCategoryPage() {
         docStatus: '',
         docC: '',
         file: '',
+        edit:true,
         idBidang:'',
         status: '',
 

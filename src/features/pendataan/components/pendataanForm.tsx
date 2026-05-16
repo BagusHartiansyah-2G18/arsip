@@ -3,7 +3,7 @@
 import React,{useEffect} from 'react';
 import { useForm,useWatch } from 'react-hook-form'; 
 import { zodResolver } from '@hookform/resolvers/zod';
-import { json, z } from 'zod';
+import { boolean, json, z } from 'zod';
 import {
     Form,
     FormControl,
@@ -51,6 +51,7 @@ const formSchema = z.object({
     keterangan:stringFieldValidator,
     status:stringFieldValidator,
     formNm: stringFieldValidator,
+    edit:z.boolean(),
     // formVal: stringFieldValidator,
 });
 

@@ -1,6 +1,8 @@
 var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/(arsip)/pendataan/route.js")
-R.c("server/chunks/node_modules_41c5bb25._.js")
-R.c("server/chunks/[root-of-the-server]__8fc8212f._.js")
-R.m("[project]/.next-internal/server/app/api/(arsip)/pendataan/route/actions.js [app-rsc] (server actions loader, ecmascript)")
-R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/(arsip)/pendataan/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
-module.exports=R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/src/app/api/(arsip)/pendataan/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports
+R.c("server/chunks/[root-of-the-server]__42391f05._.js")
+R.c("server/chunks/node_modules_next_d739b5ba._.js")
+R.c("server/chunks/[root-of-the-server]__c0cfec52._.js")
+R.c("server/chunks/[root-of-the-server]__d1d058f3._.js")
+R.m(42840)
+R.m(2678)
+module.exports=R.m(2678).exports
