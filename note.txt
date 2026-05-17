@@ -25,3 +25,19 @@ sop arsip dokument:
     2.2 upload google drive
         2.2.1 menyesuaikan dengan folder yang telah diberikan 
 3. data2 tersebut yang disimpan di SI Arsip
+
+
+
+npx prisma generate
+npm run build
+cp -r .next/static .next/standalone/.next/static
+cp -r .next/static/media .next\standalone\.next\static\media
+git add .
+git commit -m "buildz "
+git push
+
+ps -u $USER
+pkill -f "next-server"
+
+
+server js penting
