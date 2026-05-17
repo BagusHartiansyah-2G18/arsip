@@ -30,7 +30,8 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/register": {
+    "/_not-found": {
+      "initialStatus": 404,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -43,32 +44,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/register",
-      "dataRoute": "/register.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
+      "srcRoute": "/_not-found",
+      "dataRoute": "/_not-found.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -102,30 +79,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/jenis": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/jenis",
-      "dataRoute": "/jenis.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/klasifikasi": {
       "experimentalBypassFor": [
         {
@@ -150,8 +103,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/_not-found": {
-      "initialStatus": 404,
+    "/login": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -164,8 +116,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/_not-found",
-      "dataRoute": "/_not-found.rsc",
+      "srcRoute": "/login",
+      "dataRoute": "/login.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -175,7 +127,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/dashboard": {
+    "/": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -188,8 +140,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/dashboard",
-      "dataRoute": "/dashboard.rsc",
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -199,7 +151,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/auth": {
+    "/register": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -212,8 +164,32 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/auth",
-      "dataRoute": "/auth.rsc",
+      "srcRoute": "/register",
+      "dataRoute": "/register.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/pendataan/add": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/pendataan/add",
+      "dataRoute": "/pendataan/add.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -271,7 +247,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/login": {
+    "/auth": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -284,8 +260,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/login",
-      "dataRoute": "/login.rsc",
+      "srcRoute": "/auth",
+      "dataRoute": "/auth.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -295,7 +271,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/pendataan/add": {
+    "/dashboard": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -308,8 +284,32 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/pendataan/add",
-      "dataRoute": "/pendataan/add.rsc",
+      "srcRoute": "/dashboard",
+      "dataRoute": "/dashboard.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/jenis": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/jenis",
+      "dataRoute": "/jenis.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
