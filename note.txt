@@ -39,5 +39,7 @@ git push
 ps -u $USER
 pkill -f "next-server"
 
+touch tmp/restart.txt
+
 
 server js penting
