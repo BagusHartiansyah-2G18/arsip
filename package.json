@@ -8,8 +8,13 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build --turbopack",
+    "prisma:Lgenerate": "dotenv -e .env.local -- prisma generate",
+    "prisma:Pgenerate": "dotenv -e .env.production -- prisma generate",
+    
     "startp": "next start -p 3001",
     "starM": "NODE_OPTIONS='--max-old-space-size=512' next start -p 3001",
+
+
     "lint": "eslint",
     "proxy": "echo Skipping proxy task",
     "dev:dashboard": "next dev --turbo",
@@ -19,7 +24,7 @@
     "prisma:mig": "npx prisma migrate dev",
     "export": "next export",
     "start": "cross-env NODE_ENV=production node server.js",
-    "serve":"node server.js"
+    "serve": "node server.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -90,6 +95,7 @@
     "@types/react-dropzone": "^4.2.2",
     "cross-env": "^7.0.3",
     "dotenv": "^17.2.3",
+    "dotenv-cli": "^11.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
     "install": "^0.13.0",

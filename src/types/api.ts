@@ -24,8 +24,24 @@ export interface IuraianPoint{
 
 }
 export interface IAfile{
-
+    hard?: HardcopyField[];
+    soft?: SoftcopyField[];
+    online?: OnlineField[];
 }
+interface HardcopyField {
+  "No Lemari": string;
+  "No rak": string;
+}
+
+interface SoftcopyField {
+  "lokasi penyimpanan": string;
+  "nama file": string;
+}
+
+interface OnlineField {
+  nama: string;
+  value: string;
+} 
 
 export interface Iops{id:number,value:string,label:string,description:string}
 

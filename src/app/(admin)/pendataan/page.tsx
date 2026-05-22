@@ -10,7 +10,7 @@ import { Label } from '@/components/ui/label';
 import { DataTable } from '@/components/DataTable';
 import { ErrorAlert } from '@/components/ui/error-alert';
 import { useApi } from '@/hooks/api';
-import { Iarsip } from '@/types/api';
+import { IAfile, Iarsip } from '@/types/api';
 import { delPendataan } from '@/lib/api';
 import { API_ROUTES } from '@/lib/constants/routes';
 import { readDataArsip } from '@/lib/utils';
@@ -25,6 +25,7 @@ export default function dataPage() {
     const [fromDate, setFromDate] = useState('');
     const [toDate, setToDate] = useState('');
     const { data, loading, error: dataError, refetch } = useApi<Iarsip>(API_ROUTES.arsip.pendataan);
+    const [filters, setFilters] = useState<Record<string, string>>({});
 
     const [ddetail, _ddetail] = useState<Record<string, string>[]>([]);
     
@@ -57,6 +58,23 @@ export default function dataPage() {
     const errorMessage = dataError;  
     
  
+    const filteredData = (data || []).filter((item) => {
+        return Object.entries(filters).every(([key, val]) => {
+            if (!val) return true;
+
+            const keys = key.split('.');
+            let value: any = item;
+
+            for (const k of keys) {
+                value = value?.[k];
+            }
+
+            return String(value ?? '')
+                .toLowerCase()
+                .includes(val.toLowerCase());
+        });
+    });
+
     return (
         <div>
             <div className="mb-6">
@@ -93,7 +111,7 @@ export default function dataPage() {
                     },
 
                 }))}
-                data={data || []}
+                data={filteredData}
                 loading={loading}
                 onOpenFilter={() => setIsFilterOpen(true)}
                 filterDrawer={(
@@ -103,105 +121,38 @@ export default function dataPage() {
                                 <SheetHeader>
                                     <SheetTitle>Filter Data</SheetTitle>
                                 </SheetHeader>
-                                <div className="p-4 space-y-3">
-                                    <div>
-                                        <Label htmlFor="column-select">Kolom</Label>
-                                        <Select value={selectedColumnKey || ''} onValueChange={setSelectedColumnKey}>
-                                            <SelectTrigger>
-                                                <SelectValue placeholder="Pilih kolom" />
-                                            </SelectTrigger>
-                                            <SelectContent>
-                                                {columns.map((c) => (
-                                                    <SelectItem key={c.key} value={c.key}>
-                                                        {c.label}
-                                                    </SelectItem>
-                                                ))}
-                                            </SelectContent>
-                                        </Select>
-                                    </div>
 
-                                    {/* Nilai (non-date) */}
-                                    {!/(date|posted_at|created_at|updated_at)$/i.test(String(selectedColumnKey || '')) && (
-                                        <div>
-                                            <Label htmlFor="filter-value">Nilai</Label>
+                                <div className="p-4 space-y-4">
+                                    {columns.map((col) => (
+                                        <div key={col.key}>
+                                            <Label>{col.label}</Label>
                                             <Input
-                                                id="filter-value"
-                                                type="text"
-                                                value={filterValue}
-                                                onChange={(e) => setFilterValue(e.target.value)}
-                                                placeholder="Masukkan kata kunci"
+                                                value={filters[col.key] || ''}
+                                                onChange={(e) =>
+                                                    setFilters((prev) => ({
+                                                        ...prev,
+                                                        [col.key]: e.target.value,
+                                                    }))
+                                                }
+                                                placeholder={`Filter ${col.label}`}
                                             />
                                         </div>
-                                    )}
+                                    ))}
 
-                                    {/* Rentang tanggal */}
-                                    {/(date|posted_at|created_at|updated_at)$/i.test(String(selectedColumnKey || '')) && (
-                                        <>
-                                            <div>
-                                                <Label htmlFor="from-date">Dari Tanggal</Label>
-                                                <Input
-                                                    id="from-date"
-                                                    type="date"
-                                                    value={fromDate}
-                                                    onChange={(e) => setFromDate(e.target.value)}
-                                                />
-                                            </div>
-                                            <div>
-                                                <Label htmlFor="to-date">Sampai Tanggal</Label>
-                                                <Input
-                                                    id="to-date"
-                                                    type="date"
-                                                    value={toDate}
-                                                    onChange={(e) => setToDate(e.target.value)}
-                                                />
-                                            </div>
-                                        </>
-                                    )}
-
-                                    <div className="flex gap-2 pt-2 border-t border-gray-200 mt-2">
+                                    <div className="flex gap-2 pt-4 border-t">
                                         <Button
                                             variant="outline"
-                                            onClick={() => {
-                                                setSelectedColumnKey(null);
-                                                setFilterValue('');
-                                                setFromDate('');
-                                                setToDate('');
-                                            }}
                                             className="flex-1"
+                                            onClick={() => setFilters({}) }
                                         >
                                             Reset
                                         </Button>
+
                                         <Button
-                                            onClick={() => setIsFilterOpen(false)}
                                             className="flex-1 bg-emerald-500 hover:bg-emerald-600"
+                                            onClick={() => setIsFilterOpen(false)}
                                         >
                                             Terapkan
-                                        </Button>
-                                    </div>
-                                </div>
-                            </SheetContent>
-                        </Sheet>
-                        <Sheet open={isDetailOpen} onOpenChange={_isDetailOpen}>
-                            <SheetContent side="right" className="w-[400px] sm:w-[540px]">
-                                <SheetHeader>
-                                    <SheetTitle>Detail Informasi</SheetTitle>
-                                </SheetHeader>
-                                <div className="p-4 space-y-3">
-                                   {
-                                    ddetail.map(v=>(
-                                        <div className=' border-t border-gray-200'>
-                                            <Label htmlFor="column-select">{v.valueNames}</Label>
-                                            <h4 >{v.values}</h4>
-                                        </div> 
-                                    ))}
-
-
-                                    <div className="flex gap-2 pt-2 border-t border-gray-200 mt-2">
-                                        <Button
-                                            onClick={() => _isDetailOpen(false)}
-                                            className="flex-1 bg-gray-500 hover:bg-gray-600"
-                                        >
-                                            close
                                         </Button>
                                     </div>
                                 </div>
@@ -239,7 +190,16 @@ export default function dataPage() {
                         // onClick: (item) => console.log('Email', item),
                     },{
                         label: 'File',
-                        onClick: (item) =>  window.open('https://example.com', '_blank'),
+                        onClick: (item) =>  {
+                            const link = (JSON.parse(String(item.file)) as IAfile)
+                                .online?.find(v => v.nama === "link")?.value;
+
+                            if (link) {
+                                window.open(link, "_blank");
+                            } else {
+                                console.log("Link kosong");
+                            }
+                        },
                     },{
                         label: 'Detail',
                         onClick: (item) =>{  
