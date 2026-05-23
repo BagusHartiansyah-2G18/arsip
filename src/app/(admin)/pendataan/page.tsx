@@ -92,7 +92,7 @@ export default function dataPage() {
                     }}
                 />
             )}
-
+            
             <DataTable
                 title="Pendataan Arsip"
                 columns={columns.map((col) => ({
@@ -158,6 +158,42 @@ export default function dataPage() {
                                 </div>
                             </SheetContent>
                         </Sheet>
+                         <Sheet open={isDetailOpen} onOpenChange={_isDetailOpen}>
+                            <SheetContent side="right" className="w-[400px] sm:w-[540px]">
+                                <SheetHeader>
+                                    <SheetTitle>Detail Informasi</SheetTitle>
+                                </SheetHeader>
+                                <div className="p-4 space-y-3">
+                                   {ddetail.filter((v) => v.values && String(v.values).trim() !== "")
+                                        .map((v, i) => (
+                                            <div
+                                            key={i}
+                                            className="rounded-xl border bg-muted/30 p-2 shadow-sm transition-all hover:shadow-md"
+                                            >
+                                            <div className="space-y-2">
+                                                <Label className="text-xs uppercase tracking-wide text-muted-foreground">
+                                                {v.valueNames}
+                                                </Label>
+
+                                                <div className="text-sm leading-relaxed font-medium break-words">
+                                                {v.values}
+                                                </div>
+                                            </div>
+                                            </div>
+                                        ))
+                                    }
+
+                                    <div className="flex gap-2 pt-2 border-t border-gray-200 mt-2">
+                                        <Button
+                                            onClick={() => _isDetailOpen(false)}
+                                            className="flex-1 bg-gray-500 hover:bg-gray-600"
+                                        >
+                                            close
+                                        </Button>
+                                    </div>
+                                </div>
+                            </SheetContent>
+                        </Sheet>
                     </>
                    
                 )}
@@ -203,9 +239,7 @@ export default function dataPage() {
                     },{
                         label: 'Detail',
                         onClick: (item) =>{  
-                            
                             _ddetail(readDataArsip([item]));
-
                             _isDetailOpen(true);        
                         },
                     },

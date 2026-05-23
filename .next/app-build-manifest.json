@@ -3,7 +3,7 @@
     "/(admin)/auth/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/5399561052c129f1.js",
       "static/chunks/3f6abb6b517aa60f.js",
@@ -21,7 +21,7 @@
     "/(admin)/dashboard/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/5399561052c129f1.js",
       "static/chunks/3f6abb6b517aa60f.js",
@@ -41,7 +41,7 @@
     "/(admin)/form/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/5399561052c129f1.js",
       "static/chunks/3f6abb6b517aa60f.js",
@@ -63,7 +63,7 @@
     "/(admin)/jenis/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/5399561052c129f1.js",
       "static/chunks/3f6abb6b517aa60f.js",
@@ -85,7 +85,7 @@
     "/(admin)/klasifikasi/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/5399561052c129f1.js",
       "static/chunks/3f6abb6b517aa60f.js",
@@ -107,7 +107,7 @@
     "/(admin)/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/a5196e0b2ba7a278.js",
       "static/chunks/e1bcd3a77102413c.js",
@@ -121,7 +121,7 @@
     "/(admin)/pendataan/add/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/5399561052c129f1.js",
       "static/chunks/3f6abb6b517aa60f.js",
@@ -145,7 +145,7 @@
     "/(admin)/pendataan/autoForm/[id]/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/5399561052c129f1.js",
       "static/chunks/3f6abb6b517aa60f.js",
@@ -169,7 +169,7 @@
     "/(admin)/pendataan/edit/[id]/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/5399561052c129f1.js",
       "static/chunks/3f6abb6b517aa60f.js",
@@ -193,14 +193,14 @@
     "/(admin)/pendataan/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/5399561052c129f1.js",
       "static/chunks/3f6abb6b517aa60f.js",
       "static/chunks/b3dfb51795e705e5.js",
       "static/chunks/adc7558a29a940c6.css",
       "static/chunks/0c8f99e508701948.js",
-      "static/chunks/a69f345cc0f90437.js",
+      "static/chunks/031c27f859f44ae6.js",
       "static/chunks/53ad3be20163ed66.js",
       "static/chunks/6abf7bc8f054baf2.js",
       "static/chunks/43016f9a0ae5e9c9.js",
@@ -215,7 +215,7 @@
     "/(admin)/sumber/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/5399561052c129f1.js",
       "static/chunks/3f6abb6b517aa60f.js",
@@ -237,7 +237,7 @@
     "/_not-found/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/e1bcd3a77102413c.js",
       "static/chunks/92b250cade9bb666.js",
@@ -250,7 +250,7 @@
     "/login/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/266134ce75cd596d.js",
       "static/chunks/249ff6403edaed28.js",
@@ -267,7 +267,7 @@
     "/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/a5196e0b2ba7a278.js",
       "static/chunks/e1bcd3a77102413c.js",
@@ -281,7 +281,7 @@
     "/register/page": [
       "static/chunks/ff1a16fafef87110.js",
       "static/chunks/7dd66bdf8a7e5707.js",
-      "static/chunks/38b56728fd6456af.css",
+      "static/chunks/2851a4932b8db823.css",
       "static/chunks/74017e689d7c5b76.js",
       "static/chunks/4f84e41a9dc76804.js",
       "static/chunks/266134ce75cd596d.js",
