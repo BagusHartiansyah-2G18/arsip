@@ -58,14 +58,10 @@ export default function AddCategoryPage() {
     useEffect(() => {
         const fetchData = async () => {
             const saved = await __duser("formAddArsip") as IPendataanForm;
-            try {
-                if(saved.edit){
-                    _local({ next: true, dt: saved});
-                }else{
-                    _local({ next: true, dt: defaultDT });
-                }
-            } catch (error) {
-                _local({ next: true, dt: defaultDT });    
+            if(saved?.edit){
+                _local({ next: true, dt: saved});
+            }else{
+                _local({ next: true, dt: defaultDT });
             }
             
         };
