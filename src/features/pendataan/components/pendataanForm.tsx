@@ -101,7 +101,7 @@ export function CFpendataan({
 
             formNm: initialData?.formNm || '---',
 
-
+            edit:initialData?.edit|| true,
             file:initialData?.file|| '',
             status:initialData?.status|| '', 
         },

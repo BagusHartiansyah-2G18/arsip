@@ -51,19 +51,17 @@ export default function AddCategoryPage() {
         formNm: '',
 
     };
-    const [local, _local] = useState<{next: boolean;  dt: IPendataanForm;}>({ next: false, dt:defaultDT,
-    }); 
+    const [local, _local] = useState<{next: boolean;  dt: IPendataanForm;}>({ next: false, dt:defaultDT}); 
 
 
     useEffect(() => {
         const fetchData = async () => {
             const saved = await __duser("formAddArsip") as IPendataanForm;
-            if(saved?.edit){
+            if(!saved?.edit){
                 _local({ next: true, dt: saved});
             }else{
                 _local({ next: true, dt: defaultDT });
             }
-            
         };
         fetchData();
     }, []);
