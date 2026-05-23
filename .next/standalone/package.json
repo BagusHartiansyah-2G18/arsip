@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "next build --turbopack",
+    "build": "dotenv -e .env.production -- next build --turbopack",
     "prisma:Lgenerate": "dotenv -e .env.local -- prisma generate",
     "prisma:Pgenerate": "dotenv -e .env.production -- prisma generate",
     
